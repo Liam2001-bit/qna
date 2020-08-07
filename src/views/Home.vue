@@ -1,61 +1,83 @@
 <template>
   <div class="home">
-    <h1 style="padding-top:1%" align="center">Welcome to Uloans Business Intern Competency Test</h1>
 
-<!-- enter names -->
-    <v-form>
-      <v-container>
-        <v-col cols="12" sm="6">
+    <h1 class="text-center pt-6">Welcome to Uloans Business Intern Competency Test</h1>
+
+    <v-row class="py-12">
+      <v-col cols='12' md='4' offset-md='4'>
+
+        <v-form ref="form" v-model="valid" lazy-validation>
           <v-text-field
-            v-model="first"
+            v-model="fd.first"
             label="First Name"
             outlined
             shaped
+            :rules='rules'
           ></v-text-field>
-        </v-col>
 
-        <v-col cols="12" sm="6">
           <v-text-field
-            v-model="last"
+            v-model="fd.last"
             label="Last Name"
             outlined
             shaped
+            :rules='rules'
           ></v-text-field>
-        </v-col>
-      </v-container>
-    </v-form>
-    <!-- select test date -->
-    <v-row justify="center">
-      <v-date-picker v-model="picker"></v-date-picker>
-    </v-row>
-    <br>
-    <br>
-    <div class="d-flex justify-center">
-      <v-btn
-        color="primary"
-        rounded
-        :to="{name: 'Questions'}"
-      >go to test</v-btn>
-    </div>
-    <v-card height="150">
-    <v-footer 
-      color="uloans"     
-      absolute
-      class="font-weight-medium">
-      <v-col
-        class="text-center"
-        cols="12">
-        {{ new Date().getFullYear() }} — <strong>Uloans Business Intern Competency Test </strong>
+
+           <div class="d-flex justify-center">
+            <v-btn
+              color="primary"
+              rounded
+              @click="validate"
+            >go to test</v-btn>
+          </div>
+        </v-form>
+
+
       </v-col>
-    </v-footer>
-  </v-card>
+    </v-row>
+
+    <div>
+      <p>test purposes</p>
+      <p>firstname:  {{firstname}}</p>
+      <p>lastname:  {{lastname}}</p>
+    </div>
   </div> 
 </template>
 
 <script>
+import { mapMutations, mapState } from 'vuex'
+
 export default {
+  data: () => ({
+    valid: true,
+    fd: {
+      first: null,
+      last: null,
+    },
+    rules: [
+      v => !!v || 'Name is required'
+    ]
+  }),
   methods: {
-    
+    ...mapMutations(['mState']),
+    validate(){
+      if(this.$refs.form.validate()){
+        // 1.  save user details to the store
+        this.mState(['firstname', this.fd.first])
+        this.mState(['lastname', this.fd.last])
+
+        // 2.  proceed to start the test
+        this.$router.push({
+          name: 'Questions',
+          params: {
+            question: 1
+          }
+        })
+      }
+    }
+  },
+  computed: {
+    ...mapState(['firstname', 'lastname'])
   }
 }
 </script>

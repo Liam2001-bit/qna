@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
-import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify);
 
@@ -16,10 +15,8 @@ export default new Vuetify({
         accent: '#82B1FF',
         error: '#FF5252',
         info: '#2196F3',
-        success: '#49E20E',
-        warning: '#FFC107',
-        uloans: '#f87919',
-        submit: '#FF3D89',
+        success: '#4CAF50',
+        warning: '#FFC107'
       },
     },
   },

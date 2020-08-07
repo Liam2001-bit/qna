@@ -1,8 +1,6 @@
 <template>
   <div class="about">    
-    <header style="background-color:black; padding-left:5%; padding:1%;">
-      <v-img src="../assets/uloans.png" width="5%"></v-img>
-    </header>
+
     <div class="container">
     <h2 style="padding-top:1%" align="center">Instructions:</h2>
     <p style="padding-left:10%; padding-right:10%">This is a multiple-choice Test. Read all the questions carefully and then select only the correct answer for each question. There is only one correct answer for each question. Select the correct answer in the blocks provided.<br><br><u>You have 30minutes to complete this test. Goodluck.</u></p>
@@ -136,18 +134,7 @@
 
     <!-- <div id="results"></div> -->
 
-  <v-card height="90">
-    <v-footer 
-      color="uloans"     
-      absolute
-      class="font-weight-medium">
-      <v-col
-        class="text-center"
-        cols="12">
-        {{ new Date().getFullYear() }} — <strong>Uloans Business Intern Competency Test </strong>
-      </v-col>
-    </v-footer>
-  </v-card>
+
 
   <!-- <div class="base-timer">
     <svg
