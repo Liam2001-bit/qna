@@ -35,12 +35,6 @@
 
       </v-col>
     </v-row>
-
-    <div>
-      <p>test purposes</p>
-      <p>firstname:  {{firstname}}</p>
-      <p>lastname:  {{lastname}}</p>
-    </div>
   </div> 
 </template>
 
@@ -70,7 +64,7 @@ export default {
         this.$router.push({
           name: 'Questions',
           params: {
-            question: 1
+            questionNumber: 1
           }
         })
       }
