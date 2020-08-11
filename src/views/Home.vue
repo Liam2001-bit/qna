@@ -25,7 +25,7 @@
 
            <div class="d-flex justify-center">
             <v-btn
-              color="primary"
+              color="info"
               rounded
               @click="validate"
             >go to test</v-btn>
