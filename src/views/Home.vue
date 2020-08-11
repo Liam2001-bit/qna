@@ -49,7 +49,7 @@ export default {
       last: null,
     },
     rules: [
-      v => !!v || 'Name is required'
+      v => !!v || 'Names are required!'
     ]
   }),
   methods: {
