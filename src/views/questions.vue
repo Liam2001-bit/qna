@@ -50,10 +50,13 @@ export default {
           })
         } else {
           // go to results page
+          this.$router.push({
+            name: 'Result',           
+          })
         }
       } 
       else {
-        this.error = 'Please select a answer to proceed to the next question'
+        this.error = 'Please select an answer to proceed to the next question.'
       }
     }
   },

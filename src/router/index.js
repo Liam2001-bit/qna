@@ -20,7 +20,12 @@ Vue.use(VueRouter)
     name: 'Questions',
     component: () => import(/* webpackChunkName: "question" */ '../views/questions.vue'),
     props: true
-  }
+  },
+  {
+    path: '/Result',
+    name: 'Result',
+    component: () => import(/* webpackChunkName: "result" */ '../views/Result.vue'),
+  },
 ]
 
 const router = new VueRouter({

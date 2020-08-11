@@ -26,7 +26,7 @@ export default new Vuex.Store({
           C: 'Business Loan lending product: uncollateralized: R15 000 – R250 000.',
           D: 'Business Loan lending product: uncollateralized: R250 001 – R1,5m'
         },
-        answer: 'B'
+        answer: 'B',
       },
       3: {
         question: '3. Which Uloans Business lending product is the most suitable for retailers in shopping centres where a large part of their sales is via Point of Sale (POS) devices?',
