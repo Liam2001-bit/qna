@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <header style="background-color:black; padding-left:5%; padding:1%;">
-      <v-img src="@/assets/uloans.png" width="5%"></v-img>
+    <header style="background-color:black; padding:1%">
+      <v-img src="@/assets/uloans.png" width="70px"></v-img>
     </header>
 
-    <v-container>
+    <v-container class="pb-12 mb-12 pl-3 pr-3">
       <router-view/>
     </v-container>
 

@@ -1,7 +1,9 @@
 <template>
-  <div class="home">
-
-    <h1 class="text-center pt-6">Welcome to Uloans Business Intern Competency Test</h1>
+  <div class="home backgroundHome js-fullheight hero-wrap">
+    <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+			shrink-to-fit=no">
+    <h1 class="text-center pt-6" style="font-size:28px">Welcome to Uloans Business Intern Competency Test</h1>
 
     <v-row class="py-12">
       <v-col cols='12' md='4' offset-md='4'>
@@ -75,3 +77,47 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+    .backgroundHome{
+        background-image:
+        linear-gradient(to left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url(../assets/test.jpg);
+    }
+
+    .hero-wrap {
+        width: 100%;
+        height: 700px;
+        position: inherit;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center; }
+        @media (max-width: 991.98px) 
+    {
+    .hero-wrap {
+        background-position: center center !important;
+     } } 
+  .hero-wrap {
+        height: 500px; 
+    }
+  .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: 0;
+        background: #000000; 
+    }
+  .hero-wrap.hero-wrap-2 {
+        height: 600px;
+        position: relative;
+        background-position: top center; 
+    }
+    .hero-wrap.hero-wrap-2  {
+        width: 100%;
+        opacity: 0;
+        background: #000; 
+    }
+</style>

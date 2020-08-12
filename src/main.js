@@ -15,3 +15,14 @@ new Vue({
   vuetify,
   render: h => h(App)
 }).$mount('#app')
+
+
+var fullHeight = function() {
+
+  $('.js-fullheight').css('height', $(window).height());
+  $(window).resize(function(){
+    $('.js-fullheight').css('height', $(window).height());
+  });
+
+};
+fullHeight();

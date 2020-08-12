@@ -1,40 +1,117 @@
-<template>
-    <div>
-        <h1>
-            Heyy you stupid ;)  Redo it!!!
+<template>  
+    <div class=" hero-wrap js-fullheight background">
+        <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+			shrink-to-fit=no">
+        <h1 class="ml-6 mt-6 mr-6 pt-9" style="color:#fff; font-size:25px">
+            Well done on completing the Uloans Business Intern Competency Test
         </h1>
-        <h2>Almost there</h2>
+        <h2 class="ml-6 mt-4" style="color:#fff"> View your results below</h2>
+        <br>
         
-        <!-- <div>
-            <ul>
-                <li v-for="index in 10" :key="index">
-                    {{ answerSheet[index].questionNumber }} - {{ questionForm[index].questionNumber }}
-                </li>
-            </ul>
-        </div> -->
+        <div v-if="score < 8">
+            <h2  class="ml-6 mt-6 score" style="color:#fff">
+        Sorry, You <b style="color:#FF0000">FAILED</b></h2>
+        <div class="score">
+            <v-btn
+                class="px-8 ml-8 mt-2"
+                color="error"                       
+                rounded
+                :to="{name: 'Questions', params: {questionNumber: 1}}"
+            >Try Again
+            </v-btn>
+        </div>
+        </div>
+        <div v-else class="ml-6 mt-6 score">
+            <h2  style="color:#fff">Congratulations, You <b style="color: #00FF25">PASSED</b></h2>
+        </div>
+            <br>            
+            <h3 class="ml-6 mt-3 score" style="color:#fff; font-size: 24px"><u>Score:</u> {{score}}/10</h3>
+        
+            <br>        
     </div>
 </template>
-
 <script>
-
 import { mapState } from 'vuex'
 
 
 export default {
-    mounted(){
-        let qF = this.questionForm
-        let aS = this.answerSheet
-        let score = 0
-    },
-
     data: () => ({
-    score: null,
-  }),
+        score: 0,
+    }),
+    mounted(){
+        let score = 0
 
+        for (const [key, value] of Object.entries(this.answerSheet)) {
+            console.log(`${key}: ${value}`);
 
-computed: {
-    ...mapState(['questionForm', 'answerSheet'])
-  }
-
+            if(value == this.questionForm[key]["answer"]){
+                this.score += 1
+            }
+        }
+    },    
+    computed: {
+        ...mapState(['questionForm', 'answerSheet']),
+        percentage: {
+            get: function(){
+                return +(this.score * 100)
+            }
+        }
+    }
 }
+
 </script>
+
+<style scoped>
+    .background{
+        background-image:
+        linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(../assets/stock.jpg);
+    }
+
+    .hero-wrap {
+        width: 100%;
+        height: 900px;
+        position: inherit;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center; }
+        @media (max-width: 991.98px) 
+    {
+    .hero-wrap {
+        background-position: center center !important;
+     } } 
+  .hero-wrap {
+        height: 105%; 
+    }
+  .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        opacity: 0;
+        background: #000000; 
+    }
+  .hero-wrap.hero-wrap-2 {
+        height: 600px;
+        position: relative;
+        background-position: top center; 
+    }
+    .hero-wrap.hero-wrap-2  {
+        width: 100%;
+        opacity: 0;
+        background: #000; 
+    }
+
+    .score{
+      position: relative;
+      animation: mymove 3s;
+    }
+
+    @keyframes mymove {
+      from {left: 1200px;}
+      to {left: 0px;}
+    }
+</style>
