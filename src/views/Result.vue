@@ -4,29 +4,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
         <h1 class="ml-6 mt-6 mr-6 pt-9" style="color:#fff; font-size:25px">
-            Well done on completing the Uloans Business Intern Competency Test
-        </h1>
-        <h2 class="ml-6 mt-4" style="color:#fff"> View your results below</h2>
+            Well done on completing your internship exam</h1>
+        <h2 class="ml-6 mt-4" style="color:#fff">View your results below:</h2>
         <br>
         
         <div v-if="score < 8">
-            <h2  class="ml-6 mt-6 score" style="color:#fff">
+            <h2  class="ml-6 mt-6 scoreReveal" style="color:#fff">
         Sorry, You <b style="color:#FF0000">FAILED</b></h2>
-        <div class="score">
+        <div class="scoreReveal">
             <v-btn
                 class="px-8 ml-8 mt-2"
                 color="error"                       
                 rounded
-                :to="{name: 'Questions', params: {questionNumber: 1}}"
+                @click="desicion"
             >Try Again
             </v-btn>
         </div>
         </div>
-        <div v-else class="ml-6 mt-6 score">
+        <div v-else class="ml-6 mt-6 scoreReveal">
             <h2  style="color:#fff">Congratulations, You <b style="color: #00FF25">PASSED</b></h2>
         </div>
             <br>            
-            <h3 class="ml-6 mt-3 score" style="color:#fff; font-size: 24px"><u>Score:</u> {{score}}/10</h3>
+            <h3 class="ml-6 mt-3 scoreReveal" style="color:#fff; font-size: 24px"><u>Score:</u> {{score}}/10</h3>
         
             <br>        
     </div>
@@ -36,6 +35,9 @@ import { mapState } from 'vuex'
 
 
 export default {
+    props: {
+        form:{required:true, type: String}
+    },
     data: () => ({
         score: 0,
     }),
@@ -45,17 +47,28 @@ export default {
         for (const [key, value] of Object.entries(this.answerSheet)) {
             console.log(`${key}: ${value}`);
 
-            if(value == this.questionForm[key]["answer"]){
+            if(value == this.questionForms[this.form][key]["answer"]){
                 this.score += 1
             }
         }
-    },    
+    },
     computed: {
-        ...mapState(['questionForm', 'answerSheet']),
+        ...mapState(['questionForms', 'answerSheet']),
         percentage: {
             get: function(){
                 return +(this.score * 100)
             }
+        }
+    },
+    methods: {
+        desicion() {
+            // if the user passed display go to route
+            // this.$router.push({
+            //     name: '',
+            //     params: {
+
+            //     }
+            // })
         }
     }
 }
@@ -82,7 +95,9 @@ export default {
         background-position: center center !important;
      } } 
   .hero-wrap {
-        height: 105%; 
+        height: 200%; 
+        padding: 3%;
+        
     }
   .hero-wrap .overlay {
         position: absolute;
@@ -105,7 +120,7 @@ export default {
         background: #000; 
     }
 
-    .score{
+    .scoreReveal{
       position: relative;
       animation: mymove 3s;
     }

@@ -3,45 +3,72 @@
     <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
-    <h1 class="text-center pt-6" style="font-size:28px">Welcome to Uloans Business Intern Competency Test</h1>
+    <div id="grad1">
+    <v-card
+      width="100%"
+      color="transparent"
+      class="mt-7"
+      >
 
-    <v-row class="py-12">
-      <v-col cols='12' md='4' offset-md='4'>
+      <v-row 
+        class="py-12"
+        align="center"
+        justify="center"
+        >
 
-        <v-form ref="form" v-model="valid" lazy-validation>
-          <v-text-field
-            v-model="fd.first"
-            label="First Name"
-            outlined
-            shaped
-            :rules='rules'
-          ></v-text-field>
+        <h1 class="pt-6" style="font-size:28px" >Welcome, please fill in your information below to proceed</h1>
 
-          <v-text-field
-            v-model="fd.last"
-            label="Last Name"
-            outlined
-            shaped
-            :rules='rules'
-          ></v-text-field>
+        <v-col 
+          cols='12'
+          md='6' 
+          offset-md='3'
+        
+          >
 
-           <div class="d-flex justify-center">
-            <v-btn
-              color="info"
-              rounded
-              @click="validate"
-            >go to test</v-btn>
-          </div>
-        </v-form>
+          <v-form ref="form" v-model="valid" lazy-validation>
+            <v-text-field
+              v-model="fd.first"
+              label="First Name"
+              outlined
+              shaped
+              :rules='rules'
+            ></v-text-field>
 
+            <v-text-field
+              v-model="fd.last"
+              label="Last Name"
+              outlined
+              shaped
+              :rules='rules'
+            ></v-text-field>
 
-      </v-col>
-    </v-row>
+            <v-text-field
+              type='email'
+              v-model="fd.email"
+              label="Email"
+              outlined
+              shaped
+              :rules='rules'
+            ></v-text-field>
+
+            <div class="d-flex justify-center">
+              <v-btn
+                color="info"
+                rounded
+                @click="validate"
+              >proceed</v-btn>
+            </div>
+          </v-form>
+        </v-col>
+      </v-row>
+    </v-card>
+    </div>
   </div> 
 </template>
 
 <script>
 import { mapMutations, mapState } from 'vuex'
+
 
 export default {
   data: () => ({
@@ -49,9 +76,10 @@ export default {
     fd: {
       first: null,
       last: null,
+      email:null,
     },
     rules: [
-      v => !!v || 'Names are required!'
+      v => !!v || 'This field is required!'
     ]
   }),
   methods: {
@@ -61,19 +89,20 @@ export default {
         // 1.  save user details to the store
         this.mState(['firstname', this.fd.first])
         this.mState(['lastname', this.fd.last])
+        this.mState(['email', this.fd.email])
 
         // 2.  proceed to start the test
         this.$router.push({
-          name: 'Questions',
-          params: {
-            questionNumber: 1
+          name: 'Choice',
+          params: {            
+            uloansConsumerLending: {questionNumber:1}
           }
         })
       }
     }
   },
   computed: {
-    ...mapState(['firstname', 'lastname'])
+    ...mapState(['firstname', 'lastname', 'emaill'])
   }
 }
 </script>
@@ -81,13 +110,13 @@ export default {
 <style scoped>
     .backgroundHome{
         background-image:
-        linear-gradient(to left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-        url(../assets/test.jpg);
+        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)),
+        url(../assets/chess.jpg);
     }
 
     .hero-wrap {
         width: 100%;
-        height: 700px;
+        height: 900px;
         position: inherit;
         background-size: cover;
         background-repeat: no-repeat;
@@ -95,29 +124,22 @@ export default {
         @media (max-width: 991.98px) 
     {
     .hero-wrap {
-        background-position: center center !important;
+        background-position: top center !important;
      } } 
   .hero-wrap {
-        height: 500px; 
+        height: 200%; 
+        padding-top: 5%;
     }
-  .hero-wrap .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        opacity: 0;
-        background: #000000; 
-    }
+  
   .hero-wrap.hero-wrap-2 {
         height: 600px;
-        position: relative;
+        position: inherit;
         background-position: top center; 
     }
-    .hero-wrap.hero-wrap-2  {
-        width: 100%;
-        opacity: 0;
-        background: #000; 
-    }
+
+  #grad1 {
+  height: auto;
+  background-color: transparent; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) , rgba(255, 255, 255, 0.5)); 
+}
 </style>

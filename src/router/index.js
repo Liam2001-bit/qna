@@ -16,15 +16,21 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/questions/:questionNumber',
+    path: '/questions/:form/:questionNumber',
     name: 'Questions',
     component: () => import(/* webpackChunkName: "question" */ '../views/questions.vue'),
     props: true
   },
   {
-    path: '/Result',
+    path: '/Result/:form',
     name: 'Result',
     component: () => import(/* webpackChunkName: "result" */ '../views/Result.vue'),
+    props:true
+  },
+  {
+    path: '/Choice',
+    name: 'Choice',
+    component: () => import(/* webpackChunkName: "choice" */ '../views/Choice.vue'),
   },
 ]
 
