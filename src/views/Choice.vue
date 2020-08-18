@@ -6,10 +6,65 @@
     <h1 class="text-center pt-6" style="font-size:26px">Kindly select the test that you will be completing today</h1>
     <h2 class="text-center pt-2" style="font-size:22px">Please note that you only have <u>30 minutes</u> to complete any of these tests.</h2>
     <br>
-
+    <br>
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <v-img src="@/assets/uloans-business.png" width="100px"></v-img>   
+        <img src="@/assets/statuscapitalbuildingsociety.png" width="60%" alt="status capital buidling society logo"/>
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="info"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'StatusBuildingAMLCFTQuiz',
+                    questionNumber: 1
+                }
+            }">Status Capital Building Society AML/CFT Quiz </v-btn>
+        <br>
+        <v-btn
+        color="info"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'eSWATINItrainingModuleBanking',
+                    questionNumber: 1
+                }
+            }">eSWATINI Training Module Banking</v-btn>
+        <br>
+        <v-btn 
+        color="info"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'eSWATINISalesQuiz',
+                    questionNumber: 1
+                }
+            }">eSWATINI Sales Quiz </v-btn>   
+        <br>
+        <v-btn 
+        color="info"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'eSWATINIQuiz',
+                    questionNumber: 1
+                }
+            }">eSWATINI Quiz </v-btn>
+        <br>           
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: </h3>
+      </v-col>
+    </v-row>
+    <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/uloans-business.png" width="18%" alt="uloans business logo"/> 
       </v-col>
       <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <v-btn 
@@ -27,10 +82,10 @@
         <h3>Attempts: 2</h3>
       </v-col>
     </v-row>
-
+    <br>
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <v-img src="@/assets/uloans.png" width="100px"></v-img>   
+        <img src="@/assets/uloans.png" width="18%" alt="uloans logo"/>   
       </v-col>
       <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <v-btn 
@@ -48,31 +103,10 @@
         <h3>Attempts: 1 </h3>
       </v-col>
     </v-row>
-
+    <br>
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <v-img src="@/assets/blogo.png" width="110px"></v-img>   
-      </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <v-btn 
-        color="basira"
-            rounded            
-            :to="{
-                name: 'Questions',
-                params: {
-                    form: '',
-                    questionNumber: 1
-                }
-            }">Basira Group Intern</v-btn>
-      </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: </h3>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <v-img src="@/assets/fintechLogo.png" width="185px"></v-img>   
+        <img src="@/assets/fintechLogo.png" width="35%" alt="fintech campus logo"/>   
       </v-col>
       <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <v-btn 
@@ -215,13 +249,13 @@ export default {
 </script>
 
 <style scoped>
-    .backgroundChoice{
+    /* .backgroundChoice{
         background-image:
         linear-gradient(to left, rgba(245, 240, 240, 0.2), rgba(255, 255, 255, 0.5)),
         url(../assets/staircase.jpg);
         background-size: cover;
         position: relative;
-    }
+    } */
 
     .hero-wrap {
         width: 100%;
@@ -236,7 +270,7 @@ export default {
         background-position: center center !important;
      } } 
   .hero-wrap {
-        height: 200%;
+        height: 105%;
         margin-left: -1px;
         padding-top: 2%;
     }

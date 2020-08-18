@@ -355,6 +355,505 @@ export default new Vuex.Store({
           },
           answer: 'B',
         },
+      },
+      eSWATINItrainingModuleBanking: {
+        1: {
+          question: '1. What is a Mula Account?',
+          options: {
+            A: 'Savings Account',
+            B: 'Fixed deposit',
+            C: 'Current Account',
+            D: 'Salary Account',
+            E: 'Gold Account'           
+          },
+          answer: 'D',
+        },
+        2: {
+          question: '2. How it Works / who qualifies',
+          options: {
+            A: "Received at least 6 months' salary or pension payment may qualify ",
+            B: 'Can be considered for a loan',
+            C: 'Can also be opened for stop order processing, eg Medical Aid payments or Funeral Covers',
+            D: 'Only A & C are correct',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        3: {
+          question: '3. What are the benefits of opening an account with SCBS?',
+          options: {
+            A: "Personal loan of up to E30 000.00. Flexible repayment term up to 3 years",
+            B: 'Access to Mobile and Internet services',
+            C: 'Access to your money 24/7 through ATM services',
+            D: 'SMS notification to keep you updated on all account activity',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        4: {
+          question: '4. Account Opening',
+          options: {
+            A: "E50.00 minimum deposit",
+            B: 'Certified copy of Swazi ID',
+            C: 'Proof of residence (Utility Bill, water bill, electricity bill, rates bill and lease agreement not older than 3 months)',
+            D: 'Proof of income not older than 3 months',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        5: {
+          question: '5. What is a Savings Account?',
+          options: {
+            A: "A savings account designed for individuals",
+            B: 'Co-operative societies and companies who intend to have access to their funds and at the same time',
+            C: 'Achieve growth on their savings account',
+            D: 'Only A & B are correct',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        6: {
+          question: '6. What are the prerequisites to open a savings account?',
+          options: {
+            A: "E1,000.00 minimum deposit",
+            B: 'Certified copy of Swazi ID',
+            C: 'Proof of residence (Utility Bill, water bill, electricity bill, rates bill and lease agreement not older than 3 months)',
+            D: 'Proof of income not older than 3 months',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        7: {
+          question: '7. What is umncweba Savings Scheme?',
+          options: {
+            A: "This is a group savings scheme designed for staff members in various organizations. ",
+            B: 'Amounts contracted for saving are directly deducted from staff members and remitted by employer to the Society',
+            C: 'Perfect for annual savings towards Xmas and school fees. ',
+            D: 'Quite a good method used by employers to encourage and promote the culture of savings amongst employees. ',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        8: {
+          question: '8. Describe Fixed-Period shares offered at SCBS',
+          options: {
+            A: "They are issued to attract investments redeployed through various investment strategies in the sectors listed in our investment strategy. ",
+            B: 'The fixed period shares are issued and redeemable within a minimum of 2 years and a maximum of 5 years',
+            C: 'The period may be renewable at the request of the member. These are paidup shares issued at a nominal value of E1 per share ',
+            D: 'Every person who purchases these shares becomes a member and in turn has a right to vote during the society’s annual general meetings. ',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        9: {
+          question: '9. Describe Subscription Shares by selecting the appropriate answer',
+          options: {
+            A: "This is an affordable short to long term investment product.  ",
+            B: 'After accumulating substantial savings, Subscription Shares are your Permanent Shares and Fixed Period Shares.',
+            C: 'Status Capital Building Society will accept instructions relating to the disposal of interest.',
+            D: 'Customers are encouraged to reinvest interest in line with the spirit of the investment product. These allow a member to build up their portfolio through monthly contributions. ',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        10: {
+          question: '10. Describe Permanent Shares by selecting the appropriate answer',
+          options: {
+            A: "These shares are not publicly marketed but can be negotiated with the building society on application",
+            B: 'The application must be approved by the board.',
+            C: 'Suitable for high net worth individuals and institutional investors who have lump sums to save and want returns on their investments. ',
+            D: 'The nature of permanent shares issued by Status Capital Building Society is such that these will provide the investors with equity in the building society.',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        11: {
+          question: '11. Describe Fixed-Rate Deposit Account by selecting the appropriate answer',
+          options: {
+            A: "Fixed-rate Deposit Account is a fixed deposit with a non-variable interest rate. ",
+            B: 'This investment is for a short to medium term and offers flexibility to the investor to choose a notice period suitable to their needs',
+            C: 'Investors are able to take advantage of this opportunity and maximize their returns.  ',
+            D: 'Only A & C are correct',
+            E: 'A, B and C are correct'           
+          },
+          answer: 'E',
+        },
+        12: {
+          question: '12. Detail the Status Capital Building Society Call Account',
+          options: {
+            A: "A call account which offers the advantages of both a savings and a check account. ",
+            B: 'A call Like a check account, has no fixed deposit period, provides instant access to funds, and allows unlimited withdrawals',
+            C: 'This type of account also provides the investor with interest which is calculated daily but credited at the end of the month. ',
+            D: 'This vehicle is perfect for large funds that may be called up anytime without the rigidity of a fixed notice period and without having the value of the funds being depleted by charges should the funds be kept for a longer period',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        13: {
+          question: '13. Describe the benefits of the SCBS Call Account',
+          options: {
+            A: "There are no charges on this account",
+            B: 'Offers investors a stake in SCBS shareholding with a high return',
+            C: 'Guarantees instant access to your money via Short Loan Facility, with dividends (interest) payable half yearly',
+            D: 'In the event of an emergency, permanent shares may be pledged to qualify for a short loan not exceeding 90% of your investment.',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        14: {
+          question: '14. The following are requirements for call account opening, except?',
+          options: {
+            A: "Certified copy of Swazi ID",
+            B: 'Proof of residence e.g. Utility bills, electricity bill, water bill, rates bill',
+            C: 'Lease agreements (not older than 3 months)',
+            D: 'Minimum balance required',
+            E: 'Birth certificate'           
+          },
+          answer: 'E',
+        },
+        15: {
+          question: '15. What are the Application Requirements for Property and Vacant Land?',
+          options: {
+            A: "Proof of income: Current advise slip, Current lease agreement where income is rental based, Audited financial statements, cash flow projections and 6      months bank statement for companies",
+            B: 'Proof of current utility bill and declaration form',
+            C: 'For trust applications: copy of trust document and resolution to borrow for companies: form J and form C, Memorandum / Articles of Association,       Certificate of Incorporation and Resolution to borrow',
+            D: 'Confirmation of employment / contract of employment & Deed of sale in case of purchase / copy of tittle deed & Valid identity documents',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        16: {
+          question: '16. What are the Application Requirements for Building Loans (Residential and Commercial) ?',
+          options: {
+            A: "Approved Plan by City Council /Ministry of Housing and Local municipal council's written consent and Supervising Architect / Projects Manager's Professional Fees and Swatini Environmental Authority approval.",
+            B: 'Proof of income: Current advise slip, Current lease agreement where income is rental based, Audited financial statements, cash flow projections and 6 months bank statement for companies',
+            C: 'Confirmation of employment / contract of employment & Deed of sale in case of purchase / copy of tittle deed and Valid identity documents',
+            D: 'Proof of current utility bill and declaration form, For trust applications: copy of trust document and resolution to borrow & For companies: form J      and form C, Memorandum / Articles of Association, Certificate of Incorporation and Resolution to borrow',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        17: {
+          question: '17. How is the Risk Covered by the Society?',
+          options: {
+            A: "Loans financed by SCBS should be covered under the Mortgage Protection Policy and House-Owner’s Insurance. or",
+            B: 'It shall be a condition precedent to the loan being disbursed to the Borrower, that the Borrower shall take insurance cover and pay premiums in respect of such insurance policy. or',
+            C: 'In the event that the Borrowers insurer cancels such a policy, the Society shall reserve the right to force insure the loan to protect its interests',
+            D: 'The Borrower will choose the insurer intermediary with whom he shall conclude a contract of insurance to secure the dept',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        18: {
+          question: '18. A Building Society is authorized to cover the following insurance except?',
+          options: {
+            A: "Personal lines insurance and House holder’s insurance",
+            B: 'Rural & Urban housing insurance',
+            C: 'Personal, commercial all risk and liability insurance',
+            D: 'Aircraft Insurance cover',
+            E: 'Private Motor, Motorcycle & Trailers Insurance'           
+          },
+          answer: 'D',
+        },
+        19: {
+          question: '19. Which of the following loans types are offered by the Building Society?',
+          options: {
+            A: "Short Loans",
+            B: 'Mula Loans',
+            C: 'Employee Guarantee Loans',
+            D: 'Insurance Policy Loans',
+            E: 'All of the above'           
+          },
+          answer: 'E',
+        },
+        20: {
+          question: '20. What does the acronym we use SCBS stands for?',
+          options: {
+            A: "Savings Credit Bureu of Standards",
+            B: 'Save Cash Before Sunset',
+            C: 'Status Capital Building Society',
+            D: 'Status Cash Balance Sheet',
+            E: 'All of the above'           
+          },
+          answer: 'C',
+        },
+      },
+
+
+      eSWATINISalesQuiz:{
+        1: {
+          question: '1. What 2 ways through which a building society raises funds:',
+          options: {
+            A: 'Savings Account',
+            B: 'Taking deposits',
+            C: 'Isuing shares',
+            D: 'Both B and C are correct'                                
+          },
+          answer: 'D',
+        },
+        2: {
+          question: '2. What three types of shares are SCBS allowed to issue:',
+          options: {
+            A: 'Fixed period shares, Subscription shares, Permanent shares',
+            B: 'Fixed period shares, Fixed shares, Permanent shares',                                           
+          },
+          answer: 'A',
+        },
+        3: {
+          question: '3. Which type of shares are we currently marketing?',
+          options: {
+            A: 'Subscription shares',
+            B: 'Fixed period shares',  
+            C: 'Permanent shares'                                         
+          },
+          answer: 'B',
+        },
+        4: {
+          question: '4. Choose the 2 Classes of shares available under the types of shares mention in 3 above ',
+          options: {
+            A: 'Class A and Class C',
+            B: 'Class B and Class C',  
+            C: 'Class A and Class B'                                         
+          },
+          answer: 'C',
+        },
+        5: {
+          question: '5. What is the nominal value of the shares we issue?',
+          options: {
+            A: 'E1 per share',
+            B: 'E2 per share',  
+            C: 'E3 per share'                                         
+          },
+          answer: 'A',
+        },
+        6: {
+          question: '6. How many shares are required per application?',
+          options: {
+            A: '10 000',
+            B: '20 000',  
+            C: '30 000'                                         
+          },
+          answer: 'B',
+        },
+        7: {
+          question: '7. What is the difference between a Bank and a Building Society?',
+          options: {
+            A: 'A bank is a financial institution and a Building Society is a group of banks',
+            B: 'A building society is not a company but a mutual institution owned by the members whilst a bank is a company owned by its shareholders ',                             
+          },
+          answer: 'B',
+        },
+        8: {
+          question: '8. Who regulates banks? And who regulates Building societies?',
+          options: {
+            A: 'Central Bank of Eswatini for banks.FSRA for Building Societies',
+            B: 'The government of Eswatini and the Natio regulator',                             
+          },
+          answer: 'A',
+        },
+        9: {
+          question: '9. Can the shares be redeemed before the end of the term?',
+          options: {
+            A: 'No',
+            B: 'Yes',                             
+          },
+          answer: 'A',
+        },
+        10: {
+          question: '10. To whose account are funds disbursed on redemption?',
+          options: {
+            A: 'The Client',
+            B: 'The Regultor',                            
+          },
+          answer: 'A',
+        },
+      },
+
+
+      eSWATINIQuiz: {
+        1: {
+          question: '1. What is a building society?',
+          options: {
+            A: 'Company',
+            B: 'Mutual organisation',
+            C: 'Bank'                         
+          },
+          answer: 'B',
+        },
+        2: {
+          question: '2. The building society is owned by:',
+          options: {
+            A: 'Shareholders',
+            B: 'Members',
+            C: 'Status Holdings (South Africa)'                         
+          },
+          answer: 'B',
+        },        
+        3: {
+          question: '3. Is Status Capital Building Society related to Swaziland Building Society?',
+          options: {
+            A: 'YES',
+            B: 'NO',
+            C: 'Partly'                         
+          },
+          answer: 'B',
+        },
+        4: {
+          question: '4. Name 3 ways through which we invest.',
+          options: {
+            A: 'Money market',
+            B: 'Vendor financing',
+            C: 'Offering mortgage and housing finance',
+            D: 'All of the above'
+          },
+          answer: 'D',
+        },
+        5: {
+          question: '5. What do you do when your client is a pension fund or big company?',
+          options: {
+            A: 'Approach them and do presentation.',
+            B: 'Seek management approval.',
+            C: 'Ask a colleague to help you with the presentation',
+            D: 'All of the above'
+          },
+          answer: 'B',
+        },
+        6: {
+          question: '6. Do we accept cash deposits?',
+          options: {
+            A: 'YES',
+            B: 'NO',
+          },
+          answer: 'B',
+        },
+        7: {
+          question: '7. Who are our insurers?',
+          options: {
+            A: 'Lidwala',
+            B: 'Tibiyo',
+            C: 'Eswatini Royal insurance company'
+          },
+          answer: 'A',
+        },
+        8: {
+          question: '8. Do our current interest rates fluctuate based on market force?',
+          options: {
+            A: 'YES',
+            B: 'NO',            
+          },
+          answer: 'B',
+        },
+        9: {
+          question: '9. What is the current investment that is on offer?',
+          options: {
+            A: 'Fixed period shares, fixed deposits',
+            B: 'Temporary shares, temporary deposits',            
+          },
+          answer: 'A',
+        },
+        10: {
+          question: '10. Up to what amount of cash do we accept on investments?',
+          options: {
+            A: '0',
+            B: '100',
+            C: '200',
+            D: '300'
+          },
+          answer: 'A',
+        },
+      },
+
+      
+      StatusBuildingAMLCFTQuiz: {
+        1: {
+          question: '1. How many stages are there in the money laundering cycle?',
+          options: {
+            A: '1',
+            B: '2',
+            C: '3',            
+          },
+          answer: 'B',
+        },
+        2: {
+          question: '2. Can a financial institution be guilty of money laundering?',
+          options: {
+            A: 'YES',
+            B: 'NO',                       
+          },
+          answer: 'A',
+        },
+        3: {
+          question: '3. Can one launder money without following all the stages of the cycle?',
+          options: {
+            A: 'YES',
+            B: 'NO',                       
+          },
+          answer: 'A',
+        },
+        4: {
+          question: '4. When you suspect a client or potential client of laundering money or of trying to invest proceeds of crime what do you do?',
+          options: {
+            A: 'Investigate',
+            B: 'Call the police',
+            C: 'Complete and File an STR',
+            D: 'Tell the client about your suspicion'                      
+          },
+          answer: 'C',
+        },
+        5: {
+          question: '5. What is the international body responsible for setting standards on Anti Money Laundering and combating of the financing of terrorism?',
+          options: {
+            A: 'UN',
+            B: 'IMF',
+            C: 'FATF',
+            D: 'FATCA'                      
+          },
+          answer: 'C',
+        },
+        6: {
+          question: '6. You will commit a money laundering offence if you do what to/with criminal property?',
+          options: {
+            A: 'Conceal its true nature and origin',
+            B: 'Disguise its nature',
+            C: 'Convert it',
+            D: 'Transfer it',
+            E: 'All of the above'                      
+          },
+          answer: 'E',
+        },
+        7: {
+          question: '7. When should an STR be made?',
+          options: {
+            A: 'When you close a deal',
+            B: 'As soon as you know or suspect that a client or potential client has committed or is committing a money laundering offence',
+            C: 'After doing your investigations about the client',                                  
+          },
+          answer: 'B',
+        },
+        8: {
+          question: '8. Are you allowed to tip-off a client after making an STR?',
+          options: {
+            A: 'YES',
+            B: 'NO',                                            
+          },
+          answer: 'B',
+        },
+        9: {
+          question: '9. Which approach is used in AML/CFT compliance and reporting?',
+          options: {
+            A: 'Rule based approach',
+            B: 'Risk based approach',                                            
+          },
+          answer: 'B',
+        },
+        10: {
+          question: "10. Can an institution still be at risk of being used for money laundering if they dont't take cash?",
+          options: {
+            A: 'YES',
+            B: 'NO',                                            
+          },
+          answer: 'A',
+        },
       }
     },
 
@@ -378,6 +877,11 @@ export default new Vuex.Store({
       13: null,
       14: null,
       15: null,
+      16: null, 
+      17: null,
+      18: null,
+      19: null,
+      20: null,
     }
   },
   mutations: {

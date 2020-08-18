@@ -79,11 +79,11 @@ export default {
 
 
 <style scoped>
-    .backgroundQuestions{
+    /* .backgroundQuestions{
         background-image:
         linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
         url(../assets/tent.jpg);
-    }
+    } */
 
     .hero-wrap {
         width: 110%;

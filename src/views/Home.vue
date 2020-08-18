@@ -19,10 +19,9 @@
         <h1 class="pt-6" style="font-size:28px" >Welcome, please fill in your information below to proceed</h1>
 
         <v-col 
-          cols='12'
-          md='6' 
-          offset-md='3'
-        
+          cols='12'         
+          md="6" 
+          offset-md="2"         
           >
 
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -93,10 +92,7 @@ export default {
 
         // 2.  proceed to start the test
         this.$router.push({
-          name: 'Choice',
-          params: {            
-            uloansConsumerLending: {questionNumber:1}
-          }
+          name: 'Choice',          
         })
       }
     }
@@ -108,11 +104,11 @@ export default {
 </script>
 
 <style scoped>
-    .backgroundHome{
+    /* .backgroundHome{
         background-image:
         linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)),
         url(../assets/chess.jpg);
-    }
+    } */
 
     .hero-wrap {
         width: 100%;
@@ -126,9 +122,8 @@ export default {
     .hero-wrap {
         background-position: top center !important;
      } } 
-  .hero-wrap {
-        height: 200%; 
-        padding-top: 5%;
+  .hero-wrap {        
+        padding-top: 3%;
     }
   
   .hero-wrap.hero-wrap-2 {
@@ -142,4 +137,5 @@ export default {
   background-color: transparent; 
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) , rgba(255, 255, 255, 0.5)); 
 }
+
 </style>
