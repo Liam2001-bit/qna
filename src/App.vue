@@ -6,7 +6,7 @@
     </head>
     <div id="grad2">
     <header style="padding:2%">
-      <v-img src="@/assets/status.png" width="275px"></v-img>
+      <v-img src="@/assets/status.png" width="265px"></v-img>
       <div class="base-timer">
         <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g class="base-timer__circle">            
@@ -43,8 +43,8 @@ import HelloWorld from './components/HelloWorld';
 import BaseTimer from "./components/BaseTimer";
 
 const FULL_DASH_ARRAY = 283;
-const WARNING_THRESHOLD = 10;
-const ALERT_THRESHOLD = 5;
+const WARNING_THRESHOLD = 180;
+const ALERT_THRESHOLD = 100;
 
 const COLOR_CODES = {
   info: {
@@ -182,24 +182,34 @@ export default {
   height: auto;
   width: 100%;
   
-  animation: pulse 5s ease-in infinite;
+  animation: pulse 10s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0% {
-    background-color: lightskyblue;
+    background-color: rgb(231, 251, 255);
+  }
+  12% {
+    background-color: rgb(190, 226, 255);
   }
   25% {
-    background-color: lightblue;
+    background-color: rgb(130, 224, 255);
+  }
+  37% {
+    background-color: rgb(70, 172, 255);
   }
   50% {
-    background-color: lightsalmon;
-  }  
-  75% {
-    background-color: lightgreen;
+    background-color: rgb(5, 192, 255);
+  }
+
+  63% {
+    background-color: rgb(61, 207, 255);
+  }
+  78% {
+    background-color: rgb(166, 204, 255);
   }
   100% {
-    background-color: lightskyblue;
+    background-color: rgb(244, 251, 255);
   }  
 }
 </style>
@@ -208,8 +218,8 @@ export default {
 <style scoped lang="scss">
 .base-timer {
   position: inherit;
-  width: 100px;
-  height: 100px;  
+  width: 90px;
+  height: 90px;  
 
   &__svg {
     transform: scaleX(-1);
@@ -226,7 +236,7 @@ export default {
   }
 
   &__path-remaining {
-    stroke-width: 7px;
+    stroke-width: 6px;
     stroke-linecap: round;
     transform: rotate(90deg);
     transform-origin: center;
@@ -249,14 +259,14 @@ export default {
 
   &__label {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 0;
-    right: 0;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    right: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 </style>

@@ -99,6 +99,12 @@ export default {
                     passedGood: 9,
                     passedGreat: 10
                 },
+                'uloansConsumerLending': {
+                    minScore: 7,
+                    passedOk: 8,
+                    passedGood: 9,
+                    passedGreat: 10
+                },
             }
             if (this.score < passRate[this.$route.params.form].minScore){
                 this.$router.push({

@@ -21,7 +21,7 @@
                     form: 'StatusBuildingAMLCFTQuiz',
                     questionNumber: 1
                 }
-            }">Status Capital Building Society AML/CFT Quiz </v-btn>
+            }">SCBS AML/CFT Quiz </v-btn>
         <br>
         <v-btn
         color="info"
@@ -57,9 +57,9 @@
             }">eSWATINI Quiz </v-btn>
         <br>           
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: </h3>
-      </v-col>
+      </v-col> -->
     </v-row>
     <br>
     <v-row>
@@ -78,9 +78,9 @@
                 }
             }">Uloans Buisness Intern</v-btn>
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 2</h3>
-      </v-col>
+      </v-col> -->
     </v-row>
     <br>
     <v-row>
@@ -99,9 +99,9 @@
                 }
             }">Uloans Consumer Lending</v-btn>
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 1 </h3>
-      </v-col>
+      </v-col> -->
     </v-row>
     <br>
     <v-row>
@@ -120,100 +120,14 @@
                 }
             }">IT department test</v-btn>
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 4</h3>
-      </v-col>
+      </v-col> -->
       <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Passed: 1</h3>
       </v-col> -->
       
     </v-row>
-
-    <!-- <v-row>
-        <v-col class="d-flex flex-column justify center"
-        v-for="n in 1"
-        :key="n"
-        cols="12"
-        sm="8"
-      >
-      <v-img src="@/assets/uloans-business.png" width="100px"></v-img>      
-        <div class="d-flex flex-row justify-center ">
-            <v-btn
-            color="uloans"
-            rounded
-            :to="{
-                name: 'Questions',
-                params: {
-                    form: 'uloansBusiness',
-                    questionNumber: 1
-                }
-            }"                          
-            ></v-btn>
-        </div>        
-        </v-col>
-    </v-row>
-    <v-row no-gutters class="py-2 ml-6">
-        <v-col
-        v-for="n in 1"
-        :key="n"
-        cols="12"
-        sm="8"
-      >
-      <v-img src="@/assets/uloans.png" width="100px"></v-img>      
-        <div class="d-flex justify-center">
-            <v-btn
-            color="primary"
-            rounded
-            :to="{
-                name: ':Questions', 
-                params: {
-                    form: 'uloansConsumerLending',
-                    questionNumber: 1
-                }
-            }"                            
-            >Uloans Consumer Lending</v-btn>
-        </div>        
-        </v-col>
-    </v-row>
-    <v-row no-gutters class="py-2 ml-6">
-        <v-col
-        v-for="n in 1"
-        :key="n"
-        cols="12"
-        sm="8"
-      >
-      <v-img src="@/assets/blogo.png" width="100px"></v-img>      
-        <div class="d-flex justify-center">
-            <v-btn
-            color="info"
-            rounded
-            :to="{name: ':Questions', params: {questionNumber: 1}}"                            
-            >Basira Buisness Intern</v-btn>
-        </div>
-        <div class="d-flex justify-center pt-2">
-            <v-btn
-              color="info"
-              rounded
-              :to="{name: ':Questions', params: {questionNumber: 1}}"                            
-            >Basira Consumer Lending</v-btn>
-        </div>
-        <v-img src="@/assets/fintechLogo.png" width="150px"></v-img>      
-        <div class="d-flex justify-center">
-            <v-btn
-            color="primary"
-            rounded
-            :to="{
-                name: ':Questions', 
-                params: {
-                    form: 'uloansConsumerLending',
-                    questionNumber: 1
-                }
-            }"                            
-            >IT department test</v-btn>
-        </div>
-        </v-col>
-    </v-row> -->
-    
   </div> 
 </template>
 
