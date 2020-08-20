@@ -22,7 +22,7 @@
         </div>
         </div>
         <div v-else class="ml-6 mt-6 scoreReveal">
-            <h2  style="color:#fff">Congratulations, You <b style="color: #00FF25">PASSED</b> with distinction!</h2>
+            <h2 style="color:#fff">Congratulations, You <b style="color: #00FF25">PASSED</b> with a distinction!</h2>
         </div>
             <br>            
             <h3 class="ml-6 mt-3 scoreReveal" style="color:#fff; font-size: 24px"><u>Score:</u> {{score}}/10</h3>
@@ -52,18 +52,30 @@ export default {
             }
         }
     },
-    computed: {
-        ...mapState(['questionForms', 'answerSheet']),
-        percentage: {
-            get: function(){
-                return +(this.score * 100)
-            }
-        }
-    },
+    // computed: {
+    //     ...mapState(['questionForms', 'answerSheet']),
+    //     percentage: {
+    //         get: function(){
+    //             return +(this.score * 100)
+    //         }
+    //     }
+    // },
     methods: {
         desicion() {
             const passRate = {
                 'uloansBusiness': {
+                    minScore: 7,
+                    passedOk: 8,
+                    passedGood: 9,
+                    passedGreat: 10
+                },
+                'uloansConsumerLending': {
+                    minScore: 11,
+                    passedOk: 13,
+                    passedGood: 14,
+                    passedGreat: 15
+                },
+                'fintechIntern' : {
                     minScore: 7,
                     passedOk: 8,
                     passedGood: 9,
@@ -76,10 +88,10 @@ export default {
                     passedGreat: 10
                 },
                 'eSWATINItrainingModuleBanking': {
-                    minScore: 7,
-                    passedOk: 8,
-                    passedGood: 9,
-                    passedGreat: 10
+                    minScore: 16,
+                    passedOk: 18,
+                    passedGood: 19,
+                    passedGreat: 20
                 },
                 'eSWATINISalesQuiz': {
                     minScore: 7,
@@ -98,13 +110,19 @@ export default {
                     passedOk: 8,
                     passedGood: 9,
                     passedGreat: 10
+                },                
+                'cryoSave': {
+                    minScore: 5,
+                    passedOk: 6,
+                    passedGood: 7,
+                    passedGreat: 8
                 },
-                'uloansConsumerLending': {
-                    minScore: 7,
-                    passedOk: 8,
-                    passedGood: 9,
-                    passedGreat: 10
-                },
+                'payrollAfrica': {
+                    minScore: 18,
+                    passedOk: 20,
+                    passedGood: 21,
+                    passedGreat: 22,
+                },        
             }
             if (this.score < passRate[this.$route.params.form].minScore){
                 this.$router.push({

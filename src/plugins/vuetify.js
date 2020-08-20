@@ -21,7 +21,8 @@ export default new Vuetify({
         fail: '#000',
         passed: '#00FF25',
         basira: '#42692c',
-        fintech:'#007bff'
+        fintech:'#007bff',
+        cryoSave: '#a57aef',
       },
     },
   },

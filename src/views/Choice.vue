@@ -4,8 +4,59 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
     <h1 class="text-center pt-6" style="font-size:26px">Kindly select the test that you will be completing today</h1>
-    <h2 class="text-center pt-2" style="font-size:22px">Please note that you only have <u>30 minutes</u> to complete any of these tests.</h2>
+    <h2 class="text-center pt-2" style="font-size:22px">Please note that you only have <u>30 minutes</u> to complete each of these tests.</h2>
     <br>
+    <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/uloans-business.png" width="18%" alt="uloans business logo"/> 
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="uloans"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'uloansBusiness',
+                    questionNumber: 1
+                }
+            }">Uloans Buisness Intern</v-btn>
+      </v-col>
+      <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 2</h3>
+      </v-col>
+      <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>DISTINCTION</h3>
+      </v-col>
+    </v-row>
+    <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/uloans.png" width="18%" alt="uloans logo"/>   
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="uloans"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'uloansConsumerLending',
+                    questionNumber: 1
+                }
+            }">Uloans Consumer Lending</v-btn>
+      </v-col>
+      <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 3</h3>
+      </v-col>
+      <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>AVERAGE</h3>
+      </v-col>
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 1 </h3>
+      </v-col> -->
+    </v-row>
     <br>
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
@@ -61,49 +112,7 @@
         <h3>Attempts: </h3>
       </v-col> -->
     </v-row>
-    <br>
-    <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/uloans-business.png" width="18%" alt="uloans business logo"/> 
-      </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <v-btn 
-        color="uloans"
-            rounded
-            :to="{
-                name: 'Questions',
-                params: {
-                    form: 'uloansBusiness',
-                    questionNumber: 1
-                }
-            }">Uloans Buisness Intern</v-btn>
-      </v-col>
-      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: 2</h3>
-      </v-col> -->
-    </v-row>
-    <br>
-    <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/uloans.png" width="18%" alt="uloans logo"/>   
-      </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <v-btn 
-        color="uloans"
-            rounded
-            :to="{
-                name: 'Questions',
-                params: {
-                    form: 'uloansConsumerLending',
-                    questionNumber: 1
-                }
-            }">Uloans Consumer Lending</v-btn>
-      </v-col>
-      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: 1 </h3>
-      </v-col> -->
-    </v-row>
-    <br>
+    <br>    
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
         <img src="@/assets/fintechLogo.png" width="35%" alt="fintech campus logo"/>   
@@ -115,10 +124,22 @@
             :to="{
                 name: 'Questions',
                 params: {
-                    form: 'ITdeptTest',
+                    form: 'ITdeptTest', 
                     questionNumber: 1
                 }
             }">IT department test</v-btn>
+        <br>
+        <v-btn
+        color="fintech"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'fintechIntern',
+                    questionNumber: 1
+                }
+            }">fintech Intern Competency test</v-btn>
+        <br>
       </v-col>
       <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 4</h3>
@@ -128,6 +149,49 @@
       </v-col> -->
       
     </v-row>
+    <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/CryoSave1.png" width="40%" alt="Cryo Save logo"/>   
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="cryoSave"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'cryoSave',
+                    questionNumber: 1
+                }
+            }">CryoSave test</v-btn>
+      </v-col>
+    </v-row>
+      <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/SDFF.png" width="37%" alt="SDFF logo"/> 
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="orange"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'payrollAfrica',
+                    questionNumber: 1
+                }
+            }">Payroll Lending Africa</v-btn>
+      </v-col>
+      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 2</h3>
+      </v-col> -->
+      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>DISTINCTION</h3>
+      </v-col> -->
+    </v-row>
+    <br>
   </div> 
 </template>
 

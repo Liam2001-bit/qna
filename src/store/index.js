@@ -9,8 +9,7 @@ export default new Vuex.Store({
     lastname: null,
     email: null,
     questionForms: {
-      uloansConsumerLending: {
-        
+      uloansConsumerLending: {        
         1: {
           question: '1. Which Uloans Consumer lending product is governed by the NCR (National Credit Regulator)?',
           options: {
@@ -163,6 +162,7 @@ export default new Vuex.Store({
         },
       },
 
+
       uloansBusiness: {
         1: {
           question: '1. Which Uloans Business lending product is governed by the NCR (National Credit Regulator) ?',
@@ -265,6 +265,7 @@ export default new Vuex.Store({
           answer: 'B',
         },
       },
+
       
       ITdeptTest: {
         1: {
@@ -356,6 +357,8 @@ export default new Vuex.Store({
           answer: 'B',
         },
       },
+
+
       eSWATINItrainingModuleBanking: {
         1: {
           question: '1. What is a Mula Account?',
@@ -854,6 +857,399 @@ export default new Vuex.Store({
           },
           answer: 'A',
         },
+      },
+
+
+      cryoSave: {
+        1: {
+          question: "1. Explain the nature of business conducted by Cryo Save.",
+          options: {
+            A: 'Fertility tests ',
+            B: 'Harvesting and storing blood and cord stem cells',
+            C: 'Cryogenic therapy for injured sportsmen'                                            
+          },
+          answer: 'B',
+        },
+        2: {
+          question: "2. Who would the ideal customer be for Cryo Save to approach?",
+          options: {
+            A: 'Sportspeople',
+            B: 'Teachers',
+            C: 'Pregnant moms',
+            D: 'Business people'                                            
+          },
+          answer: 'C',
+        },
+        3: {
+          question: "3. When are the stem cells harvested to be stored By Cryo Save?",
+          options: {
+            A: 'When baby is 1 week old',
+            B: 'Anytime',
+            C: 'At birth',
+            D: 'When the child becomes an adult'                                            
+          },
+          answer: 'C',
+        },
+        4: {
+          question: "4. How long can one store stem cells for?",
+          options: {
+            A: '1 year',
+            B: '10 years',
+            C: '20 years',
+            D: 'Indefinately'                                            
+          },
+          answer: 'D',
+        },
+        5: {
+          question: "5. How many time can stem cells be used?",
+          options: {
+            A: 'Once',
+            B: 'Twice',
+            C: 'They can be expanded and then reused',                                            
+          },
+          answer: 'A',
+        },
+        6: {
+          question: "6. Is there a payment plan available and if so with whom is the payment plan arranged?",
+          options: {
+            A: 'No ',
+            B: 'Yes with FNB',
+            C: 'Yes with Uloans',                                            
+          },
+          answer: 'C',
+        },
+        7: {
+          question: "7. Can any body use stem cells that are banked?",
+          options: {
+            A: 'Yes ',
+            B: 'No Cryosave is a private stem cell bank',
+            C: 'The family can decide to donate them.',                                            
+          },
+          answer: 'B',
+        },
+        8: {
+          question: "8. Who is most likely to match with banked stem cells?",
+          options: {
+            A: 'The bay where they came from and direct family',
+            B: 'Anybody',                                                        
+          },
+          answer: 'B',
+        },
+      },
+
+
+      fintechIntern: {
+        1: {
+          question: "1. Meetings can be hosted at the Fintech Campus auditorium and can seat up to ___ individuals",
+          options: {
+            A: '55',
+            B: '65',
+            C: '75',
+          },
+          answer: 'B',
+        },
+        2: {
+          question: "2. At Fintech Campus, the following health and safety measures are in place to protect our staff, tenants and visitors against Covid 19:",
+          options: {
+            A: 'Temperature screening, hand sanitizing, record keeping, social distancing, frequent cleaning and PPE equipment for anyone entering the premises',
+            B: 'Temperature screening, social distancing, frequent cleaning and PPE equipment for anyone entering the premises',
+            C: 'Temperature screening, hand sanitizing, social distancing and frequent cleaning',
+          },
+          answer: 'A',
+        },
+        3: {
+          question: "3. During the Covid 19 pandemic, how frequently are the boardrooms disinfected?",
+          options: {
+            A: 'Once a day',
+            B: 'After each meeting',
+            C: 'Three times a day',
+          },
+          answer: 'B',
+        },
+        4: {
+          question: "4. When a potential client unexpectedly arrives at Fintech Campus to view our services, Fintech should:",
+          options: {
+            A: 'Be friendly and accommodate the client',
+            B: 'Turn the client away because they never booked an appointment',
+            C: 'Make an appointment for the client for another date and time',
+          },
+          answer: 'A',
+        },
+        5: {
+          question: "5. Must the slow lounge and canteen be inspected for health and safety requirements?",
+          options: {
+            A: 'Yes',
+            B: 'No',
+          },
+          answer: 'A',
+        },
+        6: {
+          question: "6. Can the boardrooms, auditorium and rooftop be hired out to outside people that do not work at Fintech Campus?",
+          options: {
+            A: 'Yes',
+            B: 'No',
+          },
+          answer: 'A',
+        },
+        7: {
+          question: "7. The building managers responsibilities mainly consist of?",
+          options: {
+            A: 'All building related issues, tenants, cleaning, maintenance and security',
+            B: 'All building related issues, tenants, cleaning, maintenance, security and IT',
+            C: 'All building related issues, tenants, cleaning, maintenance and drivers'
+          },
+          answer: 'A',
+        },
+        8: {
+          question: "8. All access to for Fintech Campus is monitored by an app called?",
+          options: {
+            A: 'Meteor',
+            B: 'Gallagher',
+            C: 'Galaxy'
+          },
+          answer: 'B',
+        },
+        9: {
+          question: "9. Does Fintech Campus provide 24/7 security?",
+          options: {
+            A: 'Yes',
+            B: 'No',
+          },
+          answer: 'A',
+        },
+        10: {
+          question: "10. Fintech Campus has the following additional service/s available:",
+          options: {
+            A: 'Virtual Office, Co-Working Space and One Person Office',
+            B: 'Hot Desk only',
+            C: 'One Person Office and Virtual Office'
+          },
+          answer: 'A',
+        },
+      },
+
+
+      payrollAfrica: {
+        1: {
+          question: '1. What do you understand when referring to the Governing Body setting the rules for MFC’s to comply with?',
+          options: {
+            A: 'Management',
+            B: 'Board of directors',
+            C: 'Government',
+            D: 'Private Sector',
+          },
+          answer: 'C',
+        },
+        2: {
+          question: '2. Why is it important to have a vision and a mission for your organization?',
+          options: {
+            A: 'Company compliance',
+            B: 'Business goals and direction',
+            C: 'Legislation',
+            D: 'All of the above',
+          },
+          answer: 'B',
+        },
+        3: {
+          question: '3. What is one of the most effective means of analysing and determining your organizational objectives and goals?',
+          options: {
+            A: 'Human resources',
+            B: 'SWOT',
+            C: 'PDF',
+            D: 'Legislation',
+          },
+          answer: 'B',
+        },
+        4: {
+          question: '4. When looking at products and pricing, what do you consider most important?',
+          options: {
+            A: 'Affordability',
+            B: 'Tax bracket',
+            C: 'Profit Margin',
+            D: 'Competitors',
+          },
+          answer: 'C',
+        },
+        5: {
+          question: '5. What does a deduction code allow you to do?',
+          options: {
+            A: 'Phone the client',
+            B: 'Meeting the client',
+            C: 'Legislative requirement',
+            D: 'Deduct from source',
+          },
+          answer: 'D',
+        },
+        6: {
+          question: '6. Where and what do you apply for?',
+          options: {
+            A: 'License at Government',
+            B: 'Partnership at Private sector',
+            C: 'License at Registrar',
+            D: 'Partnership at FNB',
+          },
+          answer: 'A',
+        },
+        7: {
+          question: '7. Why is it important to analyse affordability?',
+          options: {
+            A: 'Collect debt',
+            B: 'Be competitive',
+            C: 'Profit margin',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        8: {
+          question: '8. What does the company insure?',
+          options: {
+            A: 'Debt',
+            B: 'Personal belongings',
+            C: 'Staff life cover',
+            D: 'Medical insurance',
+          },
+          answer: 'A',
+        },
+        9: {
+          question: '9. What do you understand when referring to loan consolidation?',
+          options: {
+            A: 'High risk',
+            B: 'Low margin',
+            C: 'Business opportunity',
+            D: 'Business threat',
+          },
+          answer: 'C',
+        },
+        10: {
+          question: '10. What needs to be submitted and when?',
+          options: {
+            A: 'Staff performance annually',
+            B: 'Collection file monthly',
+            C: 'Budget weekly',
+            D: 'Attendance daily',
+          },
+          answer: 'B',
+        },
+        11: {
+          question: '11. How and when do we collect?',
+          options: {
+            A: 'Cash at the counter daily',
+            B: 'EFT weekly',
+            C: 'From source monthly',
+            D: 'Debit order annually',
+          },
+          answer: 'C',
+        },
+        12: {
+          question: '12. How do we analyse our competitors?',
+          options: {
+            A: 'Spy on them',
+            B: 'Employ them',
+            C: 'Compare SWOT',
+            D: 'Google',
+          },
+          answer: 'C',
+        },
+        13: {
+          question: '13. Why do we have a credit policy and operations manual?',
+          options: {
+            A: 'Legislation',
+            B: 'Company standards',
+            C: 'Margin',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        14: {
+          question: '14. Why is it important to analyse your debt collections?',
+          options: {
+            A: 'Company rule',
+            B: 'Minister of Finance',
+            C: 'Cashflow',
+            D: 'Bank requirement',
+          },
+          answer: 'C',
+        },
+        15: {
+          question: '15. What are the two most important marketing strategy for a MFC?',
+          options: {
+            A: 'Office location and size',
+            B: 'Product and People',
+            C: 'Internet and pricing',
+            D: 'Brand and signage',
+          },
+          answer: 'B',
+        },
+        16: {
+          question: '16. Why do we even consider customer care?',
+          options: {
+            A: 'Brand reputation',
+            B: 'Word of mouth advertising',
+            C: 'Staff performance',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        17: {
+          question: '17. Why do we need an operating system to manage the business?',
+          options: {
+            A: 'Legislation',
+            B: 'Realtime data',
+            C: 'Customer care',
+            D: 'Easy to work with',
+          },
+          answer: 'B',
+        },
+        18: {
+          question: '18. What is risk and how do we manage it?',
+          options: {
+            A: 'Increasing Debt',
+            B: 'Decreasing Sales',
+            C: 'Negative customer feedback',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        19: {
+          question: '19. What are the critical success factors we need to manage daily/weekly/monthly?',
+          options: {
+            A: 'Sales/Administration/Collections',
+            B: 'Staff/Sales/Administration',
+            C: 'Administration/Sales/Staff',
+            D: 'Creditors/Sales/Staff',
+          },
+          answer: 'A',
+        },
+        20: {
+          question: '20. What does Operations management entail?',
+          options: {
+            A: 'Facility',
+            B: 'Sales',
+            C: 'Staff',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        21: {
+          question: '21. What is the most important tool we have in the management of the business’ finance?',
+          options: {
+            A: 'Finance Manager',
+            B: 'Operating system',
+            C: 'Staff',
+            D: 'Income Tax',
+          },
+          answer: 'B',
+        },
+        22: {
+          question: '22. What are the key performance indicators when managing your workforce?',
+          options: {
+            A: 'KPI’s',
+            B: 'Behavioral Competencies',
+            C: 'Training and development',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
       }
     },
 
@@ -882,6 +1278,8 @@ export default new Vuex.Store({
       18: null,
       19: null,
       20: null,
+      21: null,
+      22: null,
     }
   },
   mutations: {
@@ -890,7 +1288,7 @@ export default new Vuex.Store({
     mState: (state, pl) => state[pl[0]] = pl[1],
     mAnswerSheet: (state, pl) => state.answerSheet[pl[0]] = pl[1] 
   },
-  actions: {
+  aDtions: {
   },
   modules: {
   },

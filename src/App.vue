@@ -5,12 +5,16 @@
       <meta name="description" content="Editor: Liam Edwards. Intership tests">
     </head>
     <div id="grad2">
-    <header style="padding:2%">
-      <v-img src="@/assets/status.png" width="265px"></v-img>
+    <header style="padding:1%">
+      <div>
+        <h1 class="d-flex align-top justify-center" style="font-weight: 600; font-size: 30px;">Intern Competency test</h1>
+      </div>
+      <img src="@/assets/status.png" width="265px"/>
+      
       <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle">            
-            <path
+        <!-- <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <g class="base-timer__circle"> -->
+            <!-- <path
               :stroke-dasharray="circleDasharray"
               class="base-timer__path-remaining"
               :class="remainingPathColor"
@@ -20,11 +24,11 @@
                 a 45,45 0 1,0 90,0
                 a 45,45 0 1,0 -90,0
               "
-            ></path>
-          </g>
-        </svg>
+            ></path>-->
+          <!-- </g>
+        </svg> -->
         <span class="base-timer__label">{{ formattedTimeLeft }} </span>
-      </div>
+      </div>    
       
     </header>
     </div>
@@ -165,7 +169,7 @@ export default {
 .bg-choice {
   background-image:
         linear-gradient(to left, rgba(245, 240, 240, 0.2), rgba(255, 255, 255, 0.5)),
-        url(./assets/staircase.jpg);
+        url(./assets/laptop.jpg);
 }
 .bg-questions {
   background-image:
@@ -182,28 +186,28 @@ export default {
   height: auto;
   width: 100%;
   
-  animation: pulse 10s ease-in-out infinite;
+  animation: pulse 5s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0% {
-    background-color: rgb(231, 251, 255);
+    background-color: rgb(231, 243, 255);
   }
   12% {
     background-color: rgb(190, 226, 255);
   }
   25% {
-    background-color: rgb(130, 224, 255);
+    background-color: rgb(130, 199, 255);
   }
   37% {
-    background-color: rgb(70, 172, 255);
+    background-color: rgb(70, 156, 255);
   }
   50% {
-    background-color: rgb(5, 192, 255);
+    background-color: rgb(5, 134, 255);
   }
 
   63% {
-    background-color: rgb(61, 207, 255);
+    background-color: rgb(61, 129, 255);
   }
   78% {
     background-color: rgb(166, 204, 255);
@@ -219,7 +223,8 @@ export default {
 .base-timer {
   position: inherit;
   width: 90px;
-  height: 90px;  
+  height: 30px;
+    
 
   &__svg {
     transform: scaleX(-1);
@@ -261,7 +266,7 @@ export default {
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 50px;
+    top: 10px;
     right: 100px;
     display: flex;
     align-items: center;

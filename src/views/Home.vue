@@ -1,13 +1,13 @@
 <template>
-  <div class="home backgroundHome js-fullheight hero-wrap">
-    <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
+  <div class="backgroundHome js-fullheight hero-wrap">
+    <meta name="description" content="Editor: Liam Edwards, Intern Competency Test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
     <div id="grad1">
     <v-card
       width="100%"
       color="transparent"
-      class="mt-7"
+      class="mt-10"
       >
 
       <v-row 
@@ -20,8 +20,8 @@
 
         <v-col 
           cols='12'         
-          md="6" 
-          offset-md="2"         
+          md="5" 
+          offset-md="0"
           >
 
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -50,7 +50,7 @@
               :rules='rules'
             ></v-text-field>
 
-            <div class="d-flex justify-center">
+            <div class="d-flex align-center justify-center">
               <v-btn
                 color="info"
                 rounded
@@ -75,7 +75,7 @@ export default {
     fd: {
       first: null,
       last: null,
-      email:null,
+      email: null,
     },
     rules: [
       v => !!v || 'This field is required!'
