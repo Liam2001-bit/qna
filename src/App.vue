@@ -2,14 +2,14 @@
   <v-app>
     
     <head>
-      <meta name="description" content="Editor: Liam Edwards. Intership tests">
+      <meta name="description" content="Editor: Liam Edwards. Intership Competency Tests">
     </head>
     <div id="grad2">
     <header style="padding:1%">
       <div>
-        <h1 class="d-flex align-top justify-center" style="font-weight: 600; font-size: 30px;">Intern Competency test</h1>
+        <h1 class="d-flex align-top justify-center" style="font-weight: 600; font-size: 30px;">Intern Competency Test</h1>
       </div>
-      <img src="@/assets/status.png" width="265px"/>
+      <img src="@/assets/status.png" width="265px" alt="Status logo"/>
       
       <div class="base-timer">
         <!-- <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -163,22 +163,22 @@ export default {
 
 .bg-home {
   background-image:
-        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)),
+        linear-gradient(to left,rgba(0, 0, 0, 0.4),rgba(255, 255, 255, 0.7)),
         url(./assets/chess.jpg);
 }
 .bg-choice {
   background-image:
-        linear-gradient(to left, rgba(245, 240, 240, 0.2), rgba(255, 255, 255, 0.5)),
+        linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(250, 248, 248, 0.5)),
         url(./assets/laptop.jpg);
 }
 .bg-questions {
   background-image:
-        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8)),
         url(./assets/tent.jpg);
 }
 .bg-result {
   background-image:
-        linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
         url(./assets/stock.jpg);
 }
 

@@ -49,7 +49,7 @@ export default {
         this.mAnswerSheet([this.questionNumber, this.$refs.questionObject.answer])
 
         // 2.  we want to go to the next question
-        if(parseInt(this.questionNumber) < 10){
+        if(parseInt(this.questionNumber) < 8){
           this.$router.push({
             name: 'Questions',
             params: {
@@ -78,13 +78,7 @@ export default {
 </script>
 
 
-<style scoped>
-    /* .backgroundQuestions{
-        background-image:
-        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-        url(../assets/tent.jpg);
-    } */
-
+<style scoped>    
     .hero-wrap {
         width: 110%;
         height: 900px;
