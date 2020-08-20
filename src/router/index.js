@@ -18,7 +18,7 @@ Vue.use(VueRouter)
   {
     path: '/questions/:form/:questionNumber',
     name: 'Questions',
-    component: () => import(/* webpackChunkName: "question" */ '../views/questions.vue'),
+    component: () => import(/* webpackChunkName: "question" */ '../views/Questions.vue'),
     props: true
   },
   {
