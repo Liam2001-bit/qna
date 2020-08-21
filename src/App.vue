@@ -174,7 +174,7 @@ export default {
 .bg-questions {
   background-image:
         linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8)),
-        url(./assets/tent.jpg);
+        url(./assets/mist.jpg); 
 }
 .bg-result {
   background-image:

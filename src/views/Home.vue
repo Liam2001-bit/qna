@@ -16,7 +16,7 @@
         justify="center"
         >
 
-        <h1 class="pt-6 pl-4 pr-2" style="font-size:28px" >Welcome, please fill in your information below to proceed</h1>
+        <h1 class="pt-6 pl-4 pr-4" style="font-size:28px" >Welcome, please fill in your information below to proceed</h1>
 
         <v-col 
           cols='12'         

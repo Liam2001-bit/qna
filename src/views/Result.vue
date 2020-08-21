@@ -52,14 +52,14 @@ export default {
             }
         }
     },
-    // computed: {
-    //     ...mapState(['questionForms', 'answerSheet']),
-    //     percentage: {
-    //         get: function(){
-    //             return +(this.score * 100)
-    //         }
-    //     }
-    // },
+    computed: {
+        ...mapState(['questionForms', 'answerSheet']),
+        percentage: {
+            get: function(){
+                return +(this.score * 100)
+            }
+        }
+    },
     methods: {
         desicion() {
             const passRate = {
@@ -71,9 +71,9 @@ export default {
                 },
                 'uloansConsumerLending': {
                     minScore: 11,
-                    passedOk: 13,
-                    passedGood: 14,
-                    passedGreat: 15
+                    passedOk: 12,
+                    passedGood: 13,
+                    passedGreat: 14
                 },
                 'fintechIntern' : {
                     minScore: 7,
@@ -89,9 +89,9 @@ export default {
                 },
                 'eSWATINItrainingModuleBanking': {
                     minScore: 16,
-                    passedOk: 18,
-                    passedGood: 19,
-                    passedGreat: 20
+                    passedOk: 17,
+                    passedGood: 18,
+                    passedGreat: 19
                 },
                 'eSWATINISalesQuiz': {
                     minScore: 7,
@@ -122,7 +122,13 @@ export default {
                     passedOk: 20,
                     passedGood: 21,
                     passedGreat: 22,
-                },        
+                },
+                'creditStore': {
+                    minScore: 13,
+                    passedOk: 15,
+                    passedGood: 16,
+                    passedGreat: 17,
+                },
             }
             if (this.score < passRate[this.$route.params.form].minScore){
                 this.$router.push({

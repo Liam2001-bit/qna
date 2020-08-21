@@ -23,6 +23,8 @@ export default new Vuetify({
         basira: '#42692c',
         fintech:'#007bff',
         cryoSave: '#a57aef',
+        sdff: '#dddddd',
+        creditStore: '#3ca8cb',
       },
     },
   },

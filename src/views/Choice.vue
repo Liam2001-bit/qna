@@ -21,7 +21,7 @@
                     form: 'uloansBusiness',
                     questionNumber: 1
                 }
-            }">Uloans Buisness Intern</v-btn>
+            }">Uloans Buisness </v-btn>
       </v-col>
       <v-col cols="2" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 2</h3>
@@ -138,7 +138,18 @@
                     form: 'fintechIntern',
                     questionNumber: 1
                 }
-            }">fintech Intern Competency test</v-btn>
+            }">fintech Campus Intern Competency test</v-btn>
+        <br>
+        <v-btn
+        color="fintech"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'finance',
+                    questionNumber: 1
+                }
+            }">Finance division Competency test</v-btn>
         <br>
       </v-col>
       <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
@@ -164,7 +175,7 @@
                     form: 'cryoSave',
                     questionNumber: 1
                 }
-            }">CryoSave test</v-btn>
+            }">CryoSave intern test</v-btn>
       </v-col>
     </v-row>
       <br>
@@ -174,7 +185,7 @@
       </v-col>
       <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <v-btn 
-        color="orange"
+        color="sdff"
             rounded
             :to="{
                 name: 'Questions',
@@ -183,6 +194,30 @@
                     questionNumber: 1
                 }
             }">Payroll Lending Africa</v-btn>
+      </v-col>
+      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 2</h3>
+      </v-col> -->
+      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>DISTINCTION</h3>
+      </v-col> -->
+    </v-row>
+    <br>
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/credit-store.png" width="47%" alt="Credit Store logo"/> 
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="creditStore"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'creditStore',
+                    questionNumber: 1
+                }
+            }">Credit Store Intern test</v-btn>
       </v-col>
       <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 2</h3>

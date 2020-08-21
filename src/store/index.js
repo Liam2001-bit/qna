@@ -255,7 +255,7 @@ export default new Vuex.Store({
           answer: 'C',
         },
         10: {
-          question: '10. What is an Escrow bank account?',
+          question: '10. When evaluating any prospective business loan application, the following are the most important points to generally consider before making a final financing decision ?',
           options: {
             A: 'The own contribution of the applicant, the net profit margin and the collateral offered.',
             B: 'The abilities of the jockey of the horse, the financial and market viability of the business, the client’s own contribution, ability to repay the loan, value of collateral offered, number of jobs created / maintained and the community value add.',
@@ -1249,6 +1249,270 @@ export default new Vuex.Store({
             D: 'All of the above',
           },
           answer: 'D',
+        },
+      },
+      
+      
+      creditStore: {
+        1: {
+          question: '1. What is ROAS?',
+          options: {
+            A: 'ROAD misspelled',
+            B: 'Return On Ad Spend',
+            C: 'Review Online Advertising Spend',
+          },
+          answer: 'B',
+        },
+        2: {
+          question: '2. What’s the function of a fulfilment partner?',
+          options: {
+            A: 'Keep Stock Holding Full',
+            B: 'Deliver Products to Clients',
+            C: 'Auto fill email fields in Advertising Champagnes',
+          },
+          answer: 'B',
+        },
+        3: {
+          question: '3. How do we keep our online shop safe?',
+          options: {
+            A: 'Hosted in Secure environment',
+            B: 'Run antivirus on our local machines',
+            C: 'Hire armed security guards',
+          },
+          answer: 'A',
+        },
+        4: {
+          question: '4. What is reverse logistics?',
+          options: {
+            A: 'Return of products with return issues ',
+            B: 'Large trucks with stock for Credit Store Reversing and damaging items',
+            C: 'Back-order stock logged into the system awaiting delivery',
+          },
+          answer: 'A',
+        },
+        5: {
+          question: '5. What is Drop Shipping?',
+          options: {
+            A: 'Pick up and go stations',
+            B: 'Supplier delivers direct to Credit Store Customer',
+            C: 'Drop locations for parcels i.e. garages or Police stations',
+          },
+          answer: 'B',
+        },
+        6: {
+          question: '6. What is a 30 day account?',
+          options: {
+            A: 'Cash on Delivery 30 days until delivery',
+            B: 'Payment in 30 days or invoice in 30 days',
+            C: '30 days delivery from our suppliers to Credit Store',
+          },
+          answer: 'B',
+        },
+        7: {
+          question: '7. What is a COO account?',
+          options: {
+            A: 'Cash on Delivery',
+            B: 'Chief Operation Officer',
+            C: 'Cash on Order',
+          },
+          answer: 'C',
+        },
+        8: {
+          question: '8. How do we ascertain what the suppliers SOH is?',
+          options: {
+            A: 'Check Facebook and get latest info there',
+            B: 'Client sends regular emails with stack holding',
+            C: 'Call them',
+            D: 'Both B & C are correct'
+          },
+          answer: 'D',
+        },
+        9: {
+          question: '9. Where do we get our loans approved?',
+          options: {
+            A: 'Our banking provider FNB',
+            B: 'National Credit Bureau',
+            C: 'uLoans',
+          },
+          answer: 'C',
+        },
+        10: {
+          question: '10. What is our back end software?',
+          options: {
+            A: 'Magento',
+            B: 'Shopify',
+            C: 'Woo Commerce',
+          },
+          answer: 'A',
+        },
+        11: {
+          question: '11. What is Customer protection act?',
+          options: {
+            A: 'Certified public accountant with advice on accounting and pricing issues',
+            B: 'Act that promotes fairness openness and good business practice between suppliers and consumers ',
+            C: 'Budget Planning by the Certified Government and Public consumer forum',
+          },
+          answer: 'B',
+        },
+        12: {
+          question: '12. What is POPI?',
+          options: {
+            A: 'Popi is the AI system running at Fintec Campus',
+            B: 'Popi is an Act the secures Protection Of Personal Information',
+            C: 'Popi is Credit Stores association the Cryosave Lab',
+          },
+          answer: 'B',
+        },
+        13: {
+          question: '13. Do we have return policies?',
+          options: {
+            A: 'Yes',
+            B: 'No',
+            C: 'Still working on it',
+          },
+          answer: 'A',
+        },
+        14: {
+          question: '14. What can our Customers review us?',
+          options: {
+            A: 'Webiste',
+            B: 'Social Media',
+            C: 'Google',
+            D: 'All of the above'
+          },
+          answer: 'D',
+        },
+        15: {
+          question: '15. Where can customers review or compliment us?',
+          options: {
+            A: 'Webiste',
+            B: 'Social Media',
+            C: 'Google',
+            D: 'All of the above'
+          },
+          answer: 'D',
+        },
+        16: {
+          question: '16. What is SEO?',
+          options: {
+            A: 'Search Engine  Optimisation',
+            B: 'Searches Engineering & Organisation',
+            C: 'Security Engineered for Organizations ',
+          },
+          answer: 'A',
+        },
+        17: {
+          question: '17. Where can our customers find us to make purchases?',
+          options: {
+            A: 'Social Media',
+            B: 'On the Credit Store website',
+            C: 'Sandton City Mall',
+            D: 'Only A & B are correct',
+          },
+          answer: 'D',
+        },      
+      },
+
+
+      finance: {
+        1: {
+          question: '1. The Statement of Profit and Loss is also called the:',
+          options: {
+            A: 'Balance Sheet',
+            B: 'Income Statement',
+            C: 'Statement of Cash Flows',
+            D: 'Statement of Financial Position',
+          },
+          answer: 'B',
+        },
+        2: {
+          question: '2. Which of the following is not a current asset?',
+          options: {
+            A: 'Cash',
+            B: 'Accounts payable',
+            C: 'Inventory',
+            D: 'Property, plant, and equipment',
+          },
+          answer: 'D',
+        },
+        3: {
+          question: '3. What happens to the balance sheet when a company pays salaries of R5,000?',
+          options: {
+            A: 'R5,000 credit in cash; R5,000 debit in accounts payable',
+            B: 'R5,000 credit in cash; R5,000 debit in retained earnings',
+            C: 'R5,000 debit in cash; R5,000 credit in retained earnings',
+            D: 'R5,000 credit in cash; R5,000 debit in accounts receivable',
+          },
+          answer: 'A',
+        },
+        4: {
+          question: '4. When can VAT be processed on a company?',
+          options: {
+            A: 'Any company can claim VAT',
+            B: 'When company is registered at CIPC',
+            C: 'When company is registered at SARS',
+            D: 'No need to be registered',
+          },
+          answer: 'C',
+        },
+        5: {
+          question: '5. The following accounts are on an income statement(can be more than one of the below)',
+          options: {
+            A: 'Shareholder account',
+            B: 'Printing and Stationary',
+            C: 'Salary control',
+            D: 'Sales',
+            E: 'B and D'
+          },
+          answer: 'E',
+        },
+        6: {
+          question: '6. Which financial statement contains revenues and expenses?',
+          options: {
+            A: 'Balance sheet',
+            B: 'Income Statement',
+            C: 'Trial Balance',
+          },
+          answer: 'B',
+        },
+        7: {
+          question: '7. Why is a Cash flow management important?',
+          options: {
+            A: 'To manage cash flow on daily basis',
+            B: 'To project income and expenses on month end',
+            C: 'Make important decisions regarding sales and payments',
+            D: 'All of the above',
+          },
+          answer: 'D',
+        },
+        8: {
+          question: '8. Which of the following items would not fall under the definition of an asset?',
+          options: {
+            A: 'Land',
+            B: 'Machinery',
+            C: 'Cash',
+            D: 'Owner’s equity',
+            E: 'Debtors'
+          },
+          answer: 'D',
+        },
+        9: {
+          question: '9. Accounting entries involve a minimum of how many accounts?',
+          options: {
+            A: 'One',
+            B: 'Two',
+            C: 'Three',
+            D: 'Four',
+          },
+          answer: 'B',
+        },
+        10: {
+          question: '10. When a company pays a bill, the account Cash will be?',
+          options: {
+            A: 'Credited',
+            B: 'Debited',            
+          },
+          answer: 'A',
         },
       }
     },
