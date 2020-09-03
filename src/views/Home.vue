@@ -1,5 +1,5 @@
 <template>
-  <div class="backgroundHome js-fullheight hero-wrap">
+  <div class="backgroundHome hero-wrap">
     <meta name="description" content="Editor: Liam Edwards, Intern Competency Test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">

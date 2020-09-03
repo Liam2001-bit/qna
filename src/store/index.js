@@ -1514,6 +1514,313 @@ export default new Vuex.Store({
           },
           answer: 'A',
         },
+      },
+      
+
+      aluma: {
+        1: {
+          question: '1. Aluma Capital Is a registered Financial Services Provider, Licensed in which Categories?',
+          options: {
+            A: 'Category 1 Only',
+            B: 'Category 2 Only',
+            C: 'Category 1 & 2',
+            D: 'Category 1 & 3'
+          },
+          answer: 'C',
+        },
+        2: {
+          question: '2. Can Aluma Offer a Client Local and Offshore Share Portfolio’s?',
+          options: {
+            A: 'True',
+            B: 'Flase',            
+          },
+          answer: 'A',
+        },
+        3: {
+          question: '3. Aluma Capital has a Structured Note s available to Clients? Aluma Capital has a Triparty Agreement with what other Mayor Banks/Investment Houses? ',
+          options: {
+            A: 'Aluma Capital, ABSA, and CITI Investment Strategies ',
+            B: 'Aluma Capital, Standard Bank, and CITI Investment Strategies ',
+            C: 'Aluma Capital, ABSA, and Nedbank.  ',
+            D: 'Aluma Capital, Nedbank, and CITI Investment Strategies '
+          },
+          answer: 'D',
+        },
+        4: {
+          question: '4. With Regards to Aluma Capital Note 3. The note offers Clients the Following: ',
+          options: {
+            A: 'A)	100% Capital Protection',
+            B: 'B)	80% Capital Protection',
+            C: 'C)	21% Minimum Return ',
+            D: 'D)	0% Min Return ',
+            E: 'E)	100% Participation in the Citi Global Multi Asset USD Index  ',
+            F: 'F)	200% Participation in the Citi Global Multi Asset USD Index',
+            G: 'G)	325 % Participation in the Citi Global Multi Asset USD Index',
+            H: 'H)	100% USD/ZAR Exposure',
+            I: 'I)	100% USD ZAR Positive Return Exposure',
+            J: 'Only A,D,G,I  are correct',
+          },
+          answer: 'J',
+        },
+        5: {
+          question: '5. The Citi Global Multi Asset USD Index consists of a Core as well as a Reserve Portfolio. With Regard to the Core Portfolio. What is the Asset Class and Weighting mix? ',
+          options: {
+            A: '60 % Equities, 10 % Commodities, 30 % Bonds',
+            B: '50%  Equities, 15 % Commodities, 35 % Bonds',
+            C: '70%  Equities, 10 % Commodities, 20 % Bonds',
+            D: '30%  Equities, 15 % Commodities, 55 % Bonds'
+          },
+          answer: 'A',
+        },
+        6: {
+          question: '6. Which fees are charged on any of our Structured Notes?',
+          options: {
+            A: 'Financial Advisor Fee: 0,5% + VAT Per Annum.',
+            B: 'Structuring Fee : 0,5% + VAT Per Annum.',
+            C: 'Fund Manager Fee: 0,2% + VAT Per Annum.',
+            D: 'All of the Above '
+          },
+          answer: 'D',
+        },
+        7: {
+          question: '7. If a Client Invests R 1 000 000 in Note 3 and the Citi Global Multi Asset USD Index falls 15 % over the 5 Year Term, what would the Note Maturity Value be? Thus what would the clients investment be worth?',
+          options: {
+            A: 'R 850 000',
+            B: 'R 1 150 000',
+            C: 'R 1 000 000',
+            D: 'R 1 015 000 '
+          },
+          answer: 'C',
+        },
+        8: {
+          question: '8. The Client Receives 100% USD ZAR Positive Return Exposure? What does this mean?',
+          options: {
+            A: 'A)	If the ZAR Depreciates Against the USD over the investment term, and positive returns in the index will be enhanced.',
+            B: 'B)	If the ZAR Depreciates Against the USD over the investment term, and positive returns in the index will be reduced. ',
+            C: 'C)	If the ZAR Appreciates Against the USD over the investment term, and positive returns in the index will be reduced. ',
+            D: 'D)	If the ZAR Appreciates Against the USD over the investment term, and positive returns in the index will be enhanced. ',
+            E: 'Only A & C are correct'
+          },
+          answer: 'E',
+        },
+        9: {
+          question: '9. What is the Minimum Investment Amount for Individual Investors and what is the Minimum Amount to Structure a Client his own Personalized Structured Note ?',
+          options: {
+            A: 'R 500 000 and R 16 000 000',
+            B: 'R 250 000 and R 18 000 000',
+            C: 'R 250 000  and USD 1 000 000',
+            D: 'R 500 000 and USD R 1 000 000',            
+          },
+          answer: 'C',
+        },
+        10: {
+          question: '10. If a clients invests in Structured Note 3, and the index gives Positive Returns of 25 % over the 5 Year term, what % Growth will the client receive in the index?',
+          options: {
+            A: '25%',
+            B: '75%',
+            C: '81.25%',
+            D: '85%',            
+          },
+          answer: 'C',
+        },
+      },
+
+
+      humanResources: {
+        1: {
+          question: '1. When recruiting new staff, it is company policy that... ?',
+          options: {
+            A: 'That the company only employs highly qualified people.',
+            B: 'That the company only employs individuals of a certain age.',
+            C: 'That the company only employs people with the required qualifications and skills within the correct salary range.',
+            D: 'The company employs people related to staff employs and friends.'
+          },
+          answer: 'C',
+        },
+        2: {
+          question: '2. What is the correct statement related to staff grievances ?',
+          options: {
+            A: 'Approach the CEO directly.',
+            B: 'Approach the Human Resources Division and complete the relevance Grievance documentation.',
+            C: 'Discuss the grievance with other employees.',
+            D: 'Go to the press.'
+          },
+          answer: 'B',
+        },
+        3: {
+          question: '3. What is the correct procedure when applying for leave ?',
+          options: {
+            A: 'Complete the necessary Leave Application Form signed off by the necessary Line Manager and Human Resources within 48 hours.',
+            B: 'Only apply for leave on the same day you want to take leave.',
+            C: 'Go on leave without signing the required forms.',
+            D: 'Only apply for leave after you have taken leave.'
+          },
+          answer: 'A',
+        },
+        4: {
+          question: '4. How many sick leave days does an employee get in a 3 year cycle ?',
+          options: {
+            A: '48 days.',
+            B: '36 days.',
+            C: '30 days.',
+            D: '24 days.'
+          },
+          answer: 'B',
+        },
+        5: {
+          question: '5. How many written warning must you give a staff member before taking disciplinary action ?',
+          options: {
+            A: '3 written warnings.',
+            B: '1 written warning.',
+            C: '2 written warnings.',
+            D: 'None of the above.'
+          },
+          answer: 'A',
+        },
+        6: {
+          question: '6. How long is a second written warning valid ?',
+          options: {
+            A: '18 months',
+            B: '3 months.',
+            C: '12 months.',
+            D: '6 months.'
+          },
+          answer: 'D',
+        },
+        7: {
+          question: '7. What is the purpose of a Performance Appraisal ?',
+          options: {
+            A: 'To earn more money.',
+            B: 'To punish poor performance.',
+            C: 'To objectively assess the performance of a staff member and provide constructive feedback to improve performance and achieve and exceed targets.',
+            D: 'To ensure staff are not acknowledged for performance.'
+          },
+          answer: 'C',
+        },
+        8: {
+          question: '8. The retrenchment process should be... ?',
+          options: {
+            A: 'In accordance with the process of the employer.',
+            B: 'Substantially and procedurally fair.',
+            C: 'The employer can embark on retrenchments for no reason.',
+            D: 'Terminating employees service without notice.'
+          },
+          answer: 'B',
+        },
+        9: {
+          question: '9. Should the employer consult the employee before embarking on retrenchments ?',
+          options: {
+            A: 'No.',
+            B: 'It is up to the discretion of the employer.',
+            C: 'Yes. It is a statutory requirement in terms of Section 189 of the Labour Relations Act.',
+            D: 'Consultation needs only to be held with employees who need to be retrenched at the end of the process.'
+          },
+          answer: 'C',
+        },
+        10: {
+          question: '10. Human Resources management helps improve...?',
+          options: {
+            A: 'Profit.',
+            B: 'Productivity.',
+            C: 'Power.',
+            D: 'Production.'
+          },
+          answer: 'B',
+        },
+      },
+
+
+      legalDivision: {
+        1: {
+          question: '1. In respect of Lease Agreements, if the landlord is a VAT Vendor and the tenant is not a VAT Vendor, should the landlord issue the tenant for VAT ?',
+          options: {
+            A: 'No.',
+            B: 'The landlord will only charge VAT if the tenant is registered for VAT.',
+            C: 'Yes.',
+            D: 'Not applicable.'
+          },
+          answer: 'C',
+        },
+        2: {
+          question: '2. Is the shareholder the owner of a company or only responsible for successfully managing the company ?',
+          options: {
+            A: 'The shareholder is not the owner of the company.',
+            B: 'The shareholder is the owner of the company.',
+            C: 'The shareholder has no relationship with the company.',
+            D: 'A shareholder cannot be a director.'
+          },
+          answer: 'B',
+        },
+        3: {
+          question: '3. What is the minimum number of directors permissible in a public company ?',
+          options: {
+            A: '3',
+            B: '12',
+            C: '18',
+            D: '1'
+          },
+          answer: 'A',
+        },
+        4: {
+          question: '4. What is the monetary jurisdiction applicable to the High Court for any civil claims ?',
+          options: {
+            A: 'R1-00 to R200 000.',
+            B: 'R400 000 and above.',
+            C: 'R200 001 to R399 000.',
+            D: 'None of the above.'
+          },
+          answer: 'B',
+        },
+        6: {
+          question: '6. In South African criminal law, in order to find someone guilty you must be able to prove guilt to the following extent... ?',
+          options: {
+            A: 'Balance of probability.',
+            B: 'As far as possible.',
+            C: 'As the court deems necessary.',
+            D: 'Beyond all reasonable doubt.'
+          },
+          answer: 'D',
+        },
+        7: {
+          question: '7. To prove a Civil Claim you need to prove your case to the following extent...?',
+          options: {
+            A: 'Beyond all reasonable doubt.',
+            B: 'As the court deems necessary.',
+            C: 'Balance of probability.',
+            D: 'As far as possible.'
+          },
+          answer: 'C',
+        },
+        8: {
+          question: '8. If you are a lender falling within the NCA, does your corporate governance in clude submitting annual reports to the NCR ?',
+          options: {
+            A: 'No',
+            B: 'Yes',
+            C: 'Not necessary.',
+            D: 'Only in the case of Insurance.'
+          },
+          answer: 'B',
+        },
+        9: {
+          question: '9. What is the importance of compliance at the NCA in the case of a lender ?',
+          options: {
+            A: 'Has no bearing at all.',
+            B: 'It is not necessary to comply with the rules of the NCR.',
+            C: 'To reduce risk of reputational harm and non-compliance with statutory requirements.',
+            D: 'Only external audit issues are important.'
+          },
+          answer: 'C',
+        },
+        10: {
+          question: '10. Is a company allowed to authorize and issue different types of shares to different types of shareholders ?',
+          options: {
+            A: 'No.',
+            B: 'Yes.',
+            C: 'Only in certain instances.',
+            D: 'None of the above.'
+          },
+          answer: 'B',
+        },
       }
     },
 

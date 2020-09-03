@@ -25,6 +25,7 @@ export default new Vuetify({
         cryoSave: '#a57aef',
         sdff: '#dddddd',
         creditStore: '#3ca8cb',
+        aluma: '#b5b5b5',
       },
     },
   },

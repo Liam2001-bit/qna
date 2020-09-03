@@ -1,5 +1,5 @@
 <template>  
-    <div class=" hero-wrap js-fullheight background">
+    <div class=" hero-wrap background">
         <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
@@ -14,7 +14,7 @@
         <div class="scoreReveal">
             <v-btn
                 class="px-8 ml-8 mt-2"
-                color="error"                       
+                color="error"
                 rounded
                 @click="desicion"
             >Try Again
@@ -129,6 +129,12 @@ export default {
                     passedGood: 16,
                     passedGreat: 17,
                 },
+                'aluma': {
+                    minScore: 7,
+                    passedOk: 8,
+                    passedGood: 9,
+                    passedGreat: 10
+                },  
             }
             if (this.score < passRate[this.$route.params.form].minScore){
                 this.$router.push({

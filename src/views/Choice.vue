@@ -1,5 +1,5 @@
 <template>
-  <div class="backgroundChoice js-fullheight hero-wrap " >
+  <div class="backgroundChoice hero-wrap " >
     <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
@@ -151,14 +151,28 @@
                 }
             }">Finance division Competency test</v-btn>
         <br>
+        <v-btn
+        color="fintech"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'humanResources',
+                    questionNumber: 1
+                }
+            }">Human resources Competency test</v-btn>
+        <br>
+        <v-btn
+        color="fintech"
+            rounded            
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'legalDivision',
+                    questionNumber: 1
+                }
+            }">legal division Competency test</v-btn>
       </v-col>
-      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: 4</h3>
-      </v-col> -->
-      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
-        <h3>Passed: 1</h3>
-      </v-col> -->
-      
     </v-row>
     <br>
     <v-row>
@@ -194,18 +208,12 @@
                     questionNumber: 1
                 }
             }">Payroll Lending Africa</v-btn>
-      </v-col>
-      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: 2</h3>
-      </v-col> -->
-      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
-        <h3>DISTINCTION</h3>
-      </v-col> -->
+      </v-col>      
     </v-row>
     <br>
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/credit-store.png" width="47%" alt="Credit Store logo"/> 
+        <img src="@/assets/credit-store.png" width="50%" alt="Credit Store logo"/> 
       </v-col>
       <v-col cols="3" class="d-flex flex-column align-center justify-center">
         <v-btn 
@@ -218,13 +226,25 @@
                     questionNumber: 1
                 }
             }">Credit Store Intern test</v-btn>
+      </v-col>      
+    </v-row>
+    <br>    
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/aluma.png" width="22%" alt="Aluma logo"/> 
       </v-col>
-      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
-        <h3>Attempts: 2</h3>
-      </v-col> -->
-      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
-        <h3>DISTINCTION</h3>
-      </v-col> -->
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn 
+        color="aluma"
+            rounded
+            :to="{
+                name: 'Questions',
+                params: {
+                    form: 'aluma',
+                    questionNumber: 1
+                }
+            }">Aluma Intern test</v-btn>
+      </v-col>
     </v-row>
     <br>
   </div> 

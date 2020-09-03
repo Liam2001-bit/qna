@@ -1,5 +1,5 @@
 <template>
-  <div class="about backgroundQuestions js-fullheight hero-wrap ">
+  <div class="about backgroundQuestions hero-wrap ">
     <meta name="description" content="Editor: Liam Edwards, Uloans intern test">
 		<meta name="viewport" content="width=device-width, initial-scale=1,
 			shrink-to-fit=no">
@@ -49,7 +49,7 @@ export default {
         this.mAnswerSheet([this.questionNumber, this.$refs.questionObject.answer])
 
         // 2.  we want to go to the next question
-        if(parseInt(this.questionNumber) < 8){
+        if(parseInt(this.questionNumber) < 10){
           this.$router.push({
             name: 'Questions',
             params: {
