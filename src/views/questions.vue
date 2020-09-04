@@ -39,8 +39,12 @@ export default {
   components: {
     questionComponent: () => import('@/components/questionComponent')
   },
+  mounted() {
+    this.mState(['startTime', true])
+  },
   methods: {
     ...mapMutations(['mAnswerSheet']),
+    ...mapMutations(['mState']),
     validate() {
       this.error = null
       
@@ -49,7 +53,7 @@ export default {
         this.mAnswerSheet([this.questionNumber, this.$refs.questionObject.answer])
 
         // 2.  we want to go to the next question
-        if(parseInt(this.questionNumber) < 10){
+        if(parseInt(this.questionNumber) < this.questionCount[this.$route.params.form]){
           this.$router.push({
             name: 'Questions',
             params: {
@@ -72,7 +76,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['questionForms'])
+    ...mapState(['questionForms', 'questionCount'])
   }
 }
 </script>

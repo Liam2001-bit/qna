@@ -11,29 +11,14 @@
       </div>
       <img src="@/assets/status.png" width="265px" alt="Status logo"/>
       
-      <div class="base-timer">
-        <!-- <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle"> -->
-            <!-- <path
-              :stroke-dasharray="circleDasharray"
-              class="base-timer__path-remaining"
-              :class="remainingPathColor"
-              d="
-                M 50, 50
-                m -45, 0
-                a 45,45 0 1,0 90,0
-                a 45,45 0 1,0 -90,0
-              "
-            ></path>-->
-          <!-- </g>
-        </svg> -->
+      <div class="base-timer" v-if="showTimer">
         <span class="base-timer__label">{{ formattedTimeLeft }} </span>
       </div>    
-      
+
     </header>
     </div>
 
-    <div class="bg" :class="background">
+    <div class="bg fill-height" :class="background">
       <v-container class="pb-12 mb-16" >
         <router-view/>
       </v-container>
@@ -45,6 +30,7 @@
 <script>
 import HelloWorld from './components/HelloWorld';
 import BaseTimer from "./components/BaseTimer";
+import { mapState } from 'vuex';
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 180;
@@ -77,12 +63,14 @@ export default {
   data() {
     return {
       timePassed: 0,
-      timerInterval: null
+      timerInterval: null,
+      showTimer: false
     };
   },
 
 
   computed: {
+    ...mapState(['startTime']),
     circleDasharray() {
       return `${(this.timeFraction * FULL_DASH_ARRAY).toFixed(0)} 283`;
     },
@@ -133,6 +121,9 @@ export default {
       if (newValue === 0) {
         this.onTimesUp();
       }
+    },
+    $route (to, from){
+        this.handleTimer()
     }
   },
 
@@ -141,6 +132,16 @@ export default {
   },
 
   methods: {
+    handleTimer() {
+      // show or hide timer depending on the current route
+      this.showTimer = this.$route.name == 'Questions' ? true : false
+
+      // reset time when the questionNumber is 1
+      if (this.$route.params.questionNumber == 1){
+        this.timePassed = 0;
+      }
+    },
+
     onTimesUp() {
       clearInterval(this.timerInterval);
     },

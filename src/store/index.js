@@ -5,9 +5,27 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    startTime: false,
     firstname: null,
     lastname: null,
     email: null,
+    questionCount: {
+      uloansConsumerLending: 15,
+      uloansBusiness: 10,
+      ITdeptTest: 10,
+      eSWATINItrainingModuleBanking: 10,
+      eSWATINISalesQuiz: 10,
+      eSWATINIQuiz: 10,
+      StatusBuildingAMLCFTQuiz: 10,
+      cryoSave: 10,
+      fintechIntern: 10,
+      payrollAfrica: 10,
+      creditStore: 10,
+      finance: 10,
+      aluma: 10,
+      humanResources: 10,
+      legalDivision: 10,
+    },
     questionForms: {
       uloansConsumerLending: {        
         1: {

@@ -73,9 +73,9 @@ export default {
   data: () => ({
     valid: true,
     fd: {
-      first: null,
-      last: null,
-      email: null,
+      first: process.env.NODE_ENV == 'development' ? 'Ariel' : null,
+      last: process.env.NODE_ENV == 'development' ? 'van Zyl' : null,
+      email: process.env.NODE_ENV == 'development' ? 'arielvz271@gmail.com' : null,
     },
     rules: [
       v => !!v || 'This field is required!'
