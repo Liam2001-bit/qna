@@ -12,20 +12,21 @@
     >View your results below:</h2>
     <br>
 
-    <div v-if="percentage < 70">
+    <div v-if="percentage < 70"
+    style="color:#fff">
         You Failed
     </div>
-    <div v-else="percentage > 90">
-        You did fucking well mate
+    <div v-else-if="percentage > 90">
+        You did exceptional; Passed with distinction
     </div>
-    <div v-else="percentage > 80">
-        That was ok
+    <div v-if="percentage > 80">
+        You did amazing; Passed great
     </div>
-    <div v-else="percentage > 70">
-        That was just just fucking there
+    <div v-else-if="percentage > 70">
+        You Passed
     </div>
 
-    <!-- <div v-if="score <= 7">
+   <div v-if="score <= 7">
       <h2
         class="ml-6 mt-6 scoreReveal"
         style="color:#fff"
@@ -77,15 +78,15 @@ export default {
     this.percentage = (this.score / max) * 100;
     debugger
     this.saveDateToDb()
-    // let score = 0
+    let score = 0
 
-    // for (const [key, value] of Object.entries(this.answerSheet)) {
-    //     console.log(`${key}: ${value}`);
+    for (const [key, value] of Object.entries(this.answerSheet)) {
+        console.log(`${key}: ${value}`);
 
-    //     if(value == this.questionForms[this.form][key]["answer"]){
-    //         this.score += 1
-    //     }
-    // }
+        if(value == this.questionForms[this.form][key]["answer"]){
+            this.score += 1
+        }
+    }
   },
   computed: {
     ...mapState([
@@ -126,10 +127,10 @@ export default {
 
       axios(config)
       .then(r => {
-        alert('saved data')
+        alert('Saved data! Thank you')
       })
       .catch(e => {
-        alert('some error, data not saved')
+        alert('Some error occurred, data not saved')
       })
     },
     desicion() {
