@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -13,7 +13,7 @@ Vue.use(VueRouter)
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '/questions/:form/:questionNumber',
@@ -25,7 +25,7 @@ Vue.use(VueRouter)
     path: '/Result/:form',
     name: 'Result',
     component: () => import(/* webpackChunkName: "result" */ '../views/Result.vue'),
-    props:true
+    props: true
   },
   {
     path: '/Choice',

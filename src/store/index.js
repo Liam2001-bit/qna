@@ -27,7 +27,7 @@ export default new Vuex.Store({
       legalDivision: 10,
     },
     questionForms: {
-      uloansConsumerLending: {        
+      uloansConsumerLending: {
         1: {
           question: '1. Which Uloans Consumer lending product is governed by the NCR (National Credit Regulator)?',
           options: {
@@ -284,13 +284,13 @@ export default new Vuex.Store({
         },
       },
 
-      
+
       ITdeptTest: {
         1: {
           question: '1. A feature of MS Office that saves the document automatically after certain interval is called ____ ?',
           options: {
             A: 'Auto Save',
-            B: 'Quick Save'          
+            B: 'Quick Save'
           },
           answer: 'A',
         },
@@ -298,7 +298,7 @@ export default new Vuex.Store({
           question: '2.To go to a specific location in a document we use what function? ',
           options: {
             A: 'Table of contents ',
-            B: 'HyperText', 
+            B: 'HyperText',
             C: 'Bookmark',
             D: 'Macro'
           },
@@ -308,7 +308,7 @@ export default new Vuex.Store({
           question: '3. In terms of Agile development Scrum methodology, what is the difference and similarity between Agile and Scrum?',
           options: {
             A: 'Agile is a broad spectrum, it is a methodology used for project management while Scrum is just a form of the Agile that describes the process and its steps more concisely',
-            B: 'Scrum is a broad spectrum, it is a methodology used for project management while Agile is just a form of the Scrum that describes the process and its steps more concisely',           
+            B: 'Scrum is a broad spectrum, it is a methodology used for project management while Agile is just a form of the Scrum that describes the process and its steps more concisely',
           },
           answer: 'A',
         },
@@ -316,7 +316,7 @@ export default new Vuex.Store({
           question: '4. What is the use of burn-up and burn-down charts?',
           options: {
             A: 'Burn-up refers to how many projects the user is currently deleting. Burn-down is how many projects that the user will be deleting.',
-            B: 'The burn-up chart illustrates the amount of completed work in a project whereas the burn-down chart depicts the amount of work remained to complete a project.',           
+            B: 'The burn-up chart illustrates the amount of completed work in a project whereas the burn-down chart depicts the amount of work remained to complete a project.',
           },
           answer: 'B',
         },
@@ -325,7 +325,7 @@ export default new Vuex.Store({
           options: {
             A: 'SQL is a programming language made by Google, MySQL is a language derived by Microsoft.',
             B: 'MySQL is a database, SQL is a larger database in a subset to MySQL',
-            C: 'SQL is an acronym for structured query language. SQL is generally used to refer to Microsoft T-SQL, MYSQL is an open source alternative to SQL'           
+            C: 'SQL is an acronym for structured query language. SQL is generally used to refer to Microsoft T-SQL, MYSQL is an open source alternative to SQL'
           },
           answer: 'C',
         },
@@ -334,7 +334,7 @@ export default new Vuex.Store({
           options: {
             A: 'Joins in SQL joins two separate files and merges them into one file.',
             B: 'A join is used to link two sheets in the same file.',
-            C: 'A join clause is used to combine rows from two or more tables, based on a related column between them.'           
+            C: 'A join clause is used to combine rows from two or more tables, based on a related column between them.'
           },
           answer: 'C',
         },
@@ -343,7 +343,7 @@ export default new Vuex.Store({
           options: {
             A: 'Int , Float, Double, Char',
             B: 'Type , Print, Double, Char',
-            C: 'Log , Float, True/False, Char'           
+            C: 'Log , Float, True/False, Char'
           },
           answer: 'A',
         },
@@ -352,7 +352,7 @@ export default new Vuex.Store({
           options: {
             A: 'abs() are for an integer value and fabs() are for floating type numbers.',
             B: 'abs() are based on abnormal values such as numbers. fabs() are based on letters or strings.',
-            C: 'abs() are a value input section where as fabs() are a Type input section.'           
+            C: 'abs() are a value input section where as fabs() are a Type input section.'
           },
           answer: 'A',
         },
@@ -361,7 +361,7 @@ export default new Vuex.Store({
           options: {
             A: 'Get faster internet',
             B: 'Add widgets',
-            C: 'Reduce image sizes'           
+            C: 'Reduce image sizes'
           },
           answer: 'C',
         },
@@ -370,7 +370,7 @@ export default new Vuex.Store({
           options: {
             A: 'ID selector finds and modifies the Class selector.',
             B: 'ID selector finds and modifies the style to any single element. Class selector can do to any number of elements.',
-            C: 'ID is a way to call something in code. Class is the name of the ID used.'           
+            C: 'ID is a way to call something in code. Class is the name of the ID used.'
           },
           answer: 'B',
         },
@@ -385,7 +385,7 @@ export default new Vuex.Store({
             B: 'Fixed deposit',
             C: 'Current Account',
             D: 'Salary Account',
-            E: 'Gold Account'           
+            E: 'Gold Account'
           },
           answer: 'D',
         },
@@ -396,7 +396,7 @@ export default new Vuex.Store({
             B: 'Can be considered for a loan',
             C: 'Can also be opened for stop order processing, eg Medical Aid payments or Funeral Covers',
             D: 'Only A & C are correct',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -407,7 +407,7 @@ export default new Vuex.Store({
             B: 'Access to Mobile and Internet services',
             C: 'Access to your money 24/7 through ATM services',
             D: 'SMS notification to keep you updated on all account activity',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -418,7 +418,7 @@ export default new Vuex.Store({
             B: 'Certified copy of Swazi ID',
             C: 'Proof of residence (Utility Bill, water bill, electricity bill, rates bill and lease agreement not older than 3 months)',
             D: 'Proof of income not older than 3 months',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -429,7 +429,7 @@ export default new Vuex.Store({
             B: 'Co-operative societies and companies who intend to have access to their funds and at the same time',
             C: 'Achieve growth on their savings account',
             D: 'Only A & B are correct',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -440,7 +440,7 @@ export default new Vuex.Store({
             B: 'Certified copy of Swazi ID',
             C: 'Proof of residence (Utility Bill, water bill, electricity bill, rates bill and lease agreement not older than 3 months)',
             D: 'Proof of income not older than 3 months',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -451,7 +451,7 @@ export default new Vuex.Store({
             B: 'Amounts contracted for saving are directly deducted from staff members and remitted by employer to the Society',
             C: 'Perfect for annual savings towards Xmas and school fees. ',
             D: 'Quite a good method used by employers to encourage and promote the culture of savings amongst employees. ',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -462,7 +462,7 @@ export default new Vuex.Store({
             B: 'The fixed period shares are issued and redeemable within a minimum of 2 years and a maximum of 5 years',
             C: 'The period may be renewable at the request of the member. These are paidup shares issued at a nominal value of E1 per share ',
             D: 'Every person who purchases these shares becomes a member and in turn has a right to vote during the society’s annual general meetings. ',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -473,7 +473,7 @@ export default new Vuex.Store({
             B: 'After accumulating substantial savings, Subscription Shares are your Permanent Shares and Fixed Period Shares.',
             C: 'Status Capital Building Society will accept instructions relating to the disposal of interest.',
             D: 'Customers are encouraged to reinvest interest in line with the spirit of the investment product. These allow a member to build up their portfolio through monthly contributions. ',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -484,7 +484,7 @@ export default new Vuex.Store({
             B: 'The application must be approved by the board.',
             C: 'Suitable for high net worth individuals and institutional investors who have lump sums to save and want returns on their investments. ',
             D: 'The nature of permanent shares issued by Status Capital Building Society is such that these will provide the investors with equity in the building society.',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -495,7 +495,7 @@ export default new Vuex.Store({
             B: 'This investment is for a short to medium term and offers flexibility to the investor to choose a notice period suitable to their needs',
             C: 'Investors are able to take advantage of this opportunity and maximize their returns.  ',
             D: 'Only A & C are correct',
-            E: 'A, B and C are correct'           
+            E: 'A, B and C are correct'
           },
           answer: 'E',
         },
@@ -506,7 +506,7 @@ export default new Vuex.Store({
             B: 'A call Like a check account, has no fixed deposit period, provides instant access to funds, and allows unlimited withdrawals',
             C: 'This type of account also provides the investor with interest which is calculated daily but credited at the end of the month. ',
             D: 'This vehicle is perfect for large funds that may be called up anytime without the rigidity of a fixed notice period and without having the value of the funds being depleted by charges should the funds be kept for a longer period',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -517,7 +517,7 @@ export default new Vuex.Store({
             B: 'Offers investors a stake in SCBS shareholding with a high return',
             C: 'Guarantees instant access to your money via Short Loan Facility, with dividends (interest) payable half yearly',
             D: 'In the event of an emergency, permanent shares may be pledged to qualify for a short loan not exceeding 90% of your investment.',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -528,7 +528,7 @@ export default new Vuex.Store({
             B: 'Proof of residence e.g. Utility bills, electricity bill, water bill, rates bill',
             C: 'Lease agreements (not older than 3 months)',
             D: 'Minimum balance required',
-            E: 'Birth certificate'           
+            E: 'Birth certificate'
           },
           answer: 'E',
         },
@@ -539,7 +539,7 @@ export default new Vuex.Store({
             B: 'Proof of current utility bill and declaration form',
             C: 'For trust applications: copy of trust document and resolution to borrow for companies: form J and form C, Memorandum / Articles of Association,       Certificate of Incorporation and Resolution to borrow',
             D: 'Confirmation of employment / contract of employment & Deed of sale in case of purchase / copy of tittle deed & Valid identity documents',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -550,7 +550,7 @@ export default new Vuex.Store({
             B: 'Proof of income: Current advise slip, Current lease agreement where income is rental based, Audited financial statements, cash flow projections and 6 months bank statement for companies',
             C: 'Confirmation of employment / contract of employment & Deed of sale in case of purchase / copy of tittle deed and Valid identity documents',
             D: 'Proof of current utility bill and declaration form, For trust applications: copy of trust document and resolution to borrow & For companies: form J      and form C, Memorandum / Articles of Association, Certificate of Incorporation and Resolution to borrow',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -561,7 +561,7 @@ export default new Vuex.Store({
             B: 'It shall be a condition precedent to the loan being disbursed to the Borrower, that the Borrower shall take insurance cover and pay premiums in respect of such insurance policy. or',
             C: 'In the event that the Borrowers insurer cancels such a policy, the Society shall reserve the right to force insure the loan to protect its interests',
             D: 'The Borrower will choose the insurer intermediary with whom he shall conclude a contract of insurance to secure the dept',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -572,7 +572,7 @@ export default new Vuex.Store({
             B: 'Rural & Urban housing insurance',
             C: 'Personal, commercial all risk and liability insurance',
             D: 'Aircraft Insurance cover',
-            E: 'Private Motor, Motorcycle & Trailers Insurance'           
+            E: 'Private Motor, Motorcycle & Trailers Insurance'
           },
           answer: 'D',
         },
@@ -583,7 +583,7 @@ export default new Vuex.Store({
             B: 'Mula Loans',
             C: 'Employee Guarantee Loans',
             D: 'Insurance Policy Loans',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -594,21 +594,21 @@ export default new Vuex.Store({
             B: 'Save Cash Before Sunset',
             C: 'Status Capital Building Society',
             D: 'Status Cash Balance Sheet',
-            E: 'All of the above'           
+            E: 'All of the above'
           },
           answer: 'C',
         },
       },
 
 
-      eSWATINISalesQuiz:{
+      eSWATINISalesQuiz: {
         1: {
           question: '1. What 2 ways through which a building society raises funds:',
           options: {
             A: 'Savings Account',
             B: 'Taking deposits',
             C: 'Isuing shares',
-            D: 'Both B and C are correct'                                
+            D: 'Both B and C are correct'
           },
           answer: 'D',
         },
@@ -616,7 +616,7 @@ export default new Vuex.Store({
           question: '2. What three types of shares are SCBS allowed to issue:',
           options: {
             A: 'Fixed period shares, Subscription shares, Permanent shares',
-            B: 'Fixed period shares, Fixed shares, Permanent shares',                                           
+            B: 'Fixed period shares, Fixed shares, Permanent shares',
           },
           answer: 'A',
         },
@@ -624,8 +624,8 @@ export default new Vuex.Store({
           question: '3. Which type of shares are we currently marketing?',
           options: {
             A: 'Subscription shares',
-            B: 'Fixed period shares',  
-            C: 'Permanent shares'                                         
+            B: 'Fixed period shares',
+            C: 'Permanent shares'
           },
           answer: 'B',
         },
@@ -633,8 +633,8 @@ export default new Vuex.Store({
           question: '4. Choose the 2 Classes of shares available under the types of shares mention in 3 above ',
           options: {
             A: 'Class A and Class C',
-            B: 'Class B and Class C',  
-            C: 'Class A and Class B'                                         
+            B: 'Class B and Class C',
+            C: 'Class A and Class B'
           },
           answer: 'C',
         },
@@ -642,8 +642,8 @@ export default new Vuex.Store({
           question: '5. What is the nominal value of the shares we issue?',
           options: {
             A: 'E1 per share',
-            B: 'E2 per share',  
-            C: 'E3 per share'                                         
+            B: 'E2 per share',
+            C: 'E3 per share'
           },
           answer: 'A',
         },
@@ -651,8 +651,8 @@ export default new Vuex.Store({
           question: '6. How many shares are required per application?',
           options: {
             A: '10 000',
-            B: '20 000',  
-            C: '30 000'                                         
+            B: '20 000',
+            C: '30 000'
           },
           answer: 'B',
         },
@@ -660,7 +660,7 @@ export default new Vuex.Store({
           question: '7. What is the difference between a Bank and a Building Society?',
           options: {
             A: 'A bank is a financial institution and a Building Society is a group of banks',
-            B: 'A building society is not a company but a mutual institution owned by the members whilst a bank is a company owned by its shareholders ',                             
+            B: 'A building society is not a company but a mutual institution owned by the members whilst a bank is a company owned by its shareholders ',
           },
           answer: 'B',
         },
@@ -668,7 +668,7 @@ export default new Vuex.Store({
           question: '8. Who regulates banks? And who regulates Building societies?',
           options: {
             A: 'Central Bank of Eswatini for banks.FSRA for Building Societies',
-            B: 'The government of Eswatini and the Natio regulator',                             
+            B: 'The government of Eswatini and the Natio regulator',
           },
           answer: 'A',
         },
@@ -676,7 +676,7 @@ export default new Vuex.Store({
           question: '9. Can the shares be redeemed before the end of the term?',
           options: {
             A: 'No',
-            B: 'Yes',                             
+            B: 'Yes',
           },
           answer: 'A',
         },
@@ -684,7 +684,7 @@ export default new Vuex.Store({
           question: '10. To whose account are funds disbursed on redemption?',
           options: {
             A: 'The Client',
-            B: 'The Regultor',                            
+            B: 'The Regultor',
           },
           answer: 'A',
         },
@@ -697,7 +697,7 @@ export default new Vuex.Store({
           options: {
             A: 'Company',
             B: 'Mutual organisation',
-            C: 'Bank'                         
+            C: 'Bank'
           },
           answer: 'B',
         },
@@ -706,16 +706,16 @@ export default new Vuex.Store({
           options: {
             A: 'Shareholders',
             B: 'Members',
-            C: 'Status Holdings (South Africa)'                         
+            C: 'Status Holdings (South Africa)'
           },
           answer: 'B',
-        },        
+        },
         3: {
           question: '3. Is Status Capital Building Society related to Swaziland Building Society?',
           options: {
             A: 'YES',
             B: 'NO',
-            C: 'Partly'                         
+            C: 'Partly'
           },
           answer: 'B',
         },
@@ -760,7 +760,7 @@ export default new Vuex.Store({
           question: '8. Do our current interest rates fluctuate based on market force?',
           options: {
             A: 'YES',
-            B: 'NO',            
+            B: 'NO',
           },
           answer: 'B',
         },
@@ -768,7 +768,7 @@ export default new Vuex.Store({
           question: '9. What is the current investment that is on offer?',
           options: {
             A: 'Fixed period shares, fixed deposits',
-            B: 'Temporary shares, temporary deposits',            
+            B: 'Temporary shares, temporary deposits',
           },
           answer: 'A',
         },
@@ -784,14 +784,14 @@ export default new Vuex.Store({
         },
       },
 
-      
+
       StatusBuildingAMLCFTQuiz: {
         1: {
           question: '1. How many stages are there in the money laundering cycle?',
           options: {
             A: '1',
             B: '2',
-            C: '3',            
+            C: '3',
           },
           answer: 'B',
         },
@@ -799,7 +799,7 @@ export default new Vuex.Store({
           question: '2. Can a financial institution be guilty of money laundering?',
           options: {
             A: 'YES',
-            B: 'NO',                       
+            B: 'NO',
           },
           answer: 'A',
         },
@@ -807,7 +807,7 @@ export default new Vuex.Store({
           question: '3. Can one launder money without following all the stages of the cycle?',
           options: {
             A: 'YES',
-            B: 'NO',                       
+            B: 'NO',
           },
           answer: 'A',
         },
@@ -817,7 +817,7 @@ export default new Vuex.Store({
             A: 'Investigate',
             B: 'Call the police',
             C: 'Complete and File an STR',
-            D: 'Tell the client about your suspicion'                      
+            D: 'Tell the client about your suspicion'
           },
           answer: 'C',
         },
@@ -827,7 +827,7 @@ export default new Vuex.Store({
             A: 'UN',
             B: 'IMF',
             C: 'FATF',
-            D: 'FATCA'                      
+            D: 'FATCA'
           },
           answer: 'C',
         },
@@ -838,7 +838,7 @@ export default new Vuex.Store({
             B: 'Disguise its nature',
             C: 'Convert it',
             D: 'Transfer it',
-            E: 'All of the above'                      
+            E: 'All of the above'
           },
           answer: 'E',
         },
@@ -847,7 +847,7 @@ export default new Vuex.Store({
           options: {
             A: 'When you close a deal',
             B: 'As soon as you know or suspect that a client or potential client has committed or is committing a money laundering offence',
-            C: 'After doing your investigations about the client',                                  
+            C: 'After doing your investigations about the client',
           },
           answer: 'B',
         },
@@ -855,7 +855,7 @@ export default new Vuex.Store({
           question: '8. Are you allowed to tip-off a client after making an STR?',
           options: {
             A: 'YES',
-            B: 'NO',                                            
+            B: 'NO',
           },
           answer: 'B',
         },
@@ -863,7 +863,7 @@ export default new Vuex.Store({
           question: '9. Which approach is used in AML/CFT compliance and reporting?',
           options: {
             A: 'Rule based approach',
-            B: 'Risk based approach',                                            
+            B: 'Risk based approach',
           },
           answer: 'B',
         },
@@ -871,7 +871,7 @@ export default new Vuex.Store({
           question: "10. Can an institution still be at risk of being used for money laundering if they dont't take cash?",
           options: {
             A: 'YES',
-            B: 'NO',                                            
+            B: 'NO',
           },
           answer: 'A',
         },
@@ -884,7 +884,7 @@ export default new Vuex.Store({
           options: {
             A: 'Fertility tests ',
             B: 'Harvesting and storing blood and cord stem cells',
-            C: 'Cryogenic therapy for injured sportsmen'                                            
+            C: 'Cryogenic therapy for injured sportsmen'
           },
           answer: 'B',
         },
@@ -894,7 +894,7 @@ export default new Vuex.Store({
             A: 'Sportspeople',
             B: 'Teachers',
             C: 'Pregnant moms',
-            D: 'Business people'                                            
+            D: 'Business people'
           },
           answer: 'C',
         },
@@ -904,7 +904,7 @@ export default new Vuex.Store({
             A: 'When baby is 1 week old',
             B: 'Anytime',
             C: 'At birth',
-            D: 'When the child becomes an adult'                                            
+            D: 'When the child becomes an adult'
           },
           answer: 'C',
         },
@@ -914,7 +914,7 @@ export default new Vuex.Store({
             A: '1 year',
             B: '10 years',
             C: '20 years',
-            D: 'Indefinately'                                            
+            D: 'Indefinately'
           },
           answer: 'D',
         },
@@ -923,7 +923,7 @@ export default new Vuex.Store({
           options: {
             A: 'Once',
             B: 'Twice',
-            C: 'They can be expanded and then reused',                                            
+            C: 'They can be expanded and then reused',
           },
           answer: 'A',
         },
@@ -932,7 +932,7 @@ export default new Vuex.Store({
           options: {
             A: 'No ',
             B: 'Yes with FNB',
-            C: 'Yes with Uloans',                                            
+            C: 'Yes with Uloans',
           },
           answer: 'C',
         },
@@ -941,7 +941,7 @@ export default new Vuex.Store({
           options: {
             A: 'Yes ',
             B: 'No Cryosave is a private stem cell bank',
-            C: 'The family can decide to donate them.',                                            
+            C: 'The family can decide to donate them.',
           },
           answer: 'B',
         },
@@ -949,7 +949,7 @@ export default new Vuex.Store({
           question: "8. Who is most likely to match with banked stem cells?",
           options: {
             A: 'The bay where they came from and direct family',
-            B: 'Anybody',                                                        
+            B: 'Anybody',
           },
           answer: 'B',
         },
@@ -1269,8 +1269,8 @@ export default new Vuex.Store({
           answer: 'D',
         },
       },
-      
-      
+
+
       creditStore: {
         1: {
           question: '1. What is ROAS?',
@@ -1428,7 +1428,7 @@ export default new Vuex.Store({
             D: 'Only A & B are correct',
           },
           answer: 'D',
-        },      
+        },
       },
 
 
@@ -1528,12 +1528,12 @@ export default new Vuex.Store({
           question: '10. When a company pays a bill, the account Cash will be?',
           options: {
             A: 'Credited',
-            B: 'Debited',            
+            B: 'Debited',
           },
           answer: 'A',
         },
       },
-      
+
 
       aluma: {
         1: {
@@ -1550,7 +1550,7 @@ export default new Vuex.Store({
           question: '2. Can Aluma Offer a Client Local and Offshore Share Portfolio’s?',
           options: {
             A: 'True',
-            B: 'Flase',            
+            B: 'Flase',
           },
           answer: 'A',
         },
@@ -1627,7 +1627,7 @@ export default new Vuex.Store({
             A: 'R 500 000 and R 16 000 000',
             B: 'R 250 000 and R 18 000 000',
             C: 'R 250 000  and USD 1 000 000',
-            D: 'R 500 000 and USD R 1 000 000',            
+            D: 'R 500 000 and USD R 1 000 000',
           },
           answer: 'C',
         },
@@ -1637,7 +1637,7 @@ export default new Vuex.Store({
             A: '25%',
             B: '75%',
             C: '81.25%',
-            D: '85%',            
+            D: '85%',
           },
           answer: 'C',
         },
@@ -1844,8 +1844,8 @@ export default new Vuex.Store({
 
 
 
-    
-    
+
+
     answerSheet: {
       1: null,
       2: null,
@@ -1862,7 +1862,7 @@ export default new Vuex.Store({
       13: null,
       14: null,
       15: null,
-      16: null, 
+      16: null,
       17: null,
       18: null,
       19: null,
@@ -1875,7 +1875,7 @@ export default new Vuex.Store({
     // pl example:  ['stateNameToEdit', 'value it should be']
     // pl example:  ['firstname', 'ariel']
     mState: (state, pl) => state[pl[0]] = pl[1],
-    mAnswerSheet: (state, pl) => state.answerSheet[pl[0]] = pl[1] 
+    mAnswerSheet: (state, pl) => state.answerSheet[pl[0]] = pl[1]
   },
   aDtions: {
   },
