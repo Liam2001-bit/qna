@@ -26,6 +26,7 @@ export default new Vuetify({
         sdff: '#dddddd',
         creditStore: '#3ca8cb',
         aluma: '#b5b5b5',
+        basira: '#556b2f',
       },
     },
   },
