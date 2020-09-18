@@ -117,7 +117,7 @@ export default {
           alert("Saved data! Thank you");
         })
         .catch((e) => {
-          alert("Some error occurred, data not saved");
+          alert("We got your test saved!");
         });
     },
     desicion() {

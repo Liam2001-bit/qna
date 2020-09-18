@@ -72,7 +72,7 @@
                     form: 'basira',
                     questionNumber: 1
                 }
-            }">Basira Group - APS competency test</v-btn>
+            }" style="color:#fff">Basira Group - APS competency test</v-btn>
       </v-col>
       <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
         <h3>Attempts: 3</h3>
@@ -154,7 +154,7 @@
                     form: 'ITdeptTest', 
                     questionNumber: 1
                 }
-            }">IT department test</v-btn>
+            }" style="color:#fff">IT department test</v-btn>
         <br>
         <v-btn
         color="fintech"
@@ -165,7 +165,7 @@
                     form: 'fintechIntern',
                     questionNumber: 1
                 }
-            }">fintech Campus Intern Competency test</v-btn>
+            }" style="color:#fff">fintech Campus Intern Competency test</v-btn>
         <br>
         <v-btn
         color="fintech"
@@ -176,7 +176,7 @@
                     form: 'finance',
                     questionNumber: 1
                 }
-            }">Finance division Competency test</v-btn>
+            }" style="color:#fff">Finance division Competency test</v-btn>
         <br>
         <v-btn
         color="fintech"
@@ -187,7 +187,7 @@
                     form: 'humanResources',
                     questionNumber: 1
                 }
-            }">Human resources Competency test</v-btn>
+            }" style="color:#fff">Human resources Competency test</v-btn>
         <br>
         <v-btn
         color="fintech"
@@ -198,7 +198,7 @@
                     form: 'legalDivision',
                     questionNumber: 1
                 }
-            }">legal division Competency test</v-btn>
+            }" style="color:#fff">legal division Competency test</v-btn>
       </v-col>
     </v-row>
     <br>
