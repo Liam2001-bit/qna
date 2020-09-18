@@ -1,0 +1,11 @@
+POST https://otptest.lnder.co.za/api/v1/intern/tests HTTP/1.1
+content-type: application/json
+token: erkjhg39847fyui3hf943yf83jfeesdhf98324f923iwejfij9%^#$^%$^%%$&%&*^$&$HTF%R&^HT&^%RG*^Rhrh9%^BR954rv8b%Rrv756
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "email": "email",
+  "testName": "testName",
+  "score": 50,
+}
