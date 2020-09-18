@@ -79,6 +79,36 @@
     <br />
     <v-row>
       <v-col cols="4" class="d-flex flex-column align-center justify-center">
+        <img src="@/assets/blogo.png" width="20%" alt="uloans logo" />
+      </v-col>
+      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <v-btn
+          color="basira"
+          rounded
+          :to="{
+            name: 'Questions',
+            params: {
+              form: 'basira',
+              questionNumber: 1,
+            },
+          }"
+          style="color: #fff"
+          >Basira Group - APS competency test</v-btn
+        >
+      </v-col>
+      <!-- <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 3</h3>
+      </v-col>
+      <v-col cols="2" class="d-flex flex-column align-center justify-center">
+        <h3>AVERAGE</h3>
+      </v-col> -->
+      <!-- <v-col cols="3" class="d-flex flex-column align-center justify-center">
+        <h3>Attempts: 1 </h3>
+      </v-col> -->
+    </v-row>
+    <br />
+    <v-row>
+      <v-col cols="4" class="d-flex flex-column align-center justify-center">
         <img
           src="@/assets/statuscapitalbuildingsociety.png"
           width="60%"
@@ -163,6 +193,7 @@
               questionNumber: 1,
             },
           }"
+          style="color: #fff"
           >IT department test</v-btn
         >
         <br />
@@ -176,6 +207,7 @@
               questionNumber: 1,
             },
           }"
+          style="color: #fff"
           >fintech Campus Intern Competency test</v-btn
         >
         <br />
@@ -189,6 +221,7 @@
               questionNumber: 1,
             },
           }"
+          style="color: #fff"
           >Finance division Competency test</v-btn
         >
         <br />
@@ -202,6 +235,7 @@
               questionNumber: 1,
             },
           }"
+          style="color: #fff"
           >Human resources Competency test</v-btn
         >
         <br />
@@ -215,6 +249,7 @@
               questionNumber: 1,
             },
           }"
+          style="color: #fff"
           >legal division Competency test</v-btn
         >
       </v-col>

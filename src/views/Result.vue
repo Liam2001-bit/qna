@@ -6,12 +6,12 @@
     <h2 class="ml-6 mt-4" style="color: #fff">View your results below:</h2>
     <br />
 
-    <div v-if="percentage < 70" style="color: #fff">You Failed</div>
-    <div v-else-if="percentage > 90">
+    <!-- <div v-if="percentage < 70" style="color: #fff">You Failed</div>
+    <div v-else-if="percentage > 90" style="color: #fff">
       You did exceptional; Passed with distinction
     </div>
-    <div v-if="percentage > 80">You did amazing; Passed great</div>
-    <div v-else-if="percentage > 70">You Passed</div>
+    <div v-if="percentage > 80" style="color: #fff">You did amazing; Passed great</div>
+    <div v-else-if="percentage > 70">You Passed</div> -->
 
     <div v-if="score <= 7">
       <h2 class="ml-6 mt-6 scoreReveal" style="color: #fff">
@@ -26,15 +26,13 @@
 
     <div v-else class="ml-6 mt-6 scoreReveal">
       <h2 style="color: #fff">
-        Congratulations, You <b style="color: #00ff25">PASSED</b> with a
-        distinction!
+        Congratulations, You <b style="color: #00ff25">PASSED</b>
       </h2>
     </div>
     <br />
     <h3 class="ml-6 mt-3 scoreReveal" style="color: #fff; font-size: 24px">
       <u>Score:</u> {{ percentage.toFixed(2) }}%
     </h3>
-    -->
 
     <v-btn icon color="red" :to="{ name: 'Home' }" x-large class="home-btn">
       <v-icon x-large>mdi-home</v-icon>
@@ -119,7 +117,7 @@ export default {
           alert("Saved data! Thank you");
         })
         .catch((e) => {
-          alert("Some error occurred, data not saved");
+          alert("We got your test saved!");
         });
     },
     desicion() {
@@ -191,6 +189,12 @@ export default {
           passedGreat: 17,
         },
         aluma: {
+          minScore: 7,
+          passedOk: 8,
+          passedGood: 9,
+          passedGreat: 10,
+        },
+        basira: {
           minScore: 7,
           passedOk: 8,
           passedGood: 9,

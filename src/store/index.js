@@ -13,18 +13,19 @@ export default new Vuex.Store({
       uloansConsumerLending: 15,
       uloansBusiness: 10,
       ITdeptTest: 10,
-      eSWATINItrainingModuleBanking: 10,
+      eSWATINItrainingModuleBanking: 20,
       eSWATINISalesQuiz: 10,
       eSWATINIQuiz: 10,
       StatusBuildingAMLCFTQuiz: 10,
-      cryoSave: 10,
+      cryoSave: 8,
       fintechIntern: 10,
-      payrollAfrica: 10,
-      creditStore: 10,
+      payrollAfrica: 22,
+      creditStore: 17,
       finance: 10,
       aluma: 10,
       humanResources: 10,
       legalDivision: 10,
+      basira: 10,
     },
     questionForms: {
       uloansConsumerLending: {
@@ -136,7 +137,7 @@ export default new Vuex.Store({
             C: '590',
             D: '595'
           },
-          answer: 'C',
+          answer: 'B',
         },
         12: {
           question: '12. Which of the following banks are excluded from doing DebiCheck’s?',
@@ -152,7 +153,7 @@ export default new Vuex.Store({
           question: '13. When doing employer confirmations, which of the following should not be confirmed by the employees HR department?',
           options: {
             A: 'Salary pay date',
-            B: 'Salary pay date',
+            B: 'Employer start date',
             C: 'Banking details',
             D: 'Permanent or temporary employment status'
           },
@@ -163,7 +164,7 @@ export default new Vuex.Store({
           options: {
             A: '30 minutes',
             B: '2 hours',
-            C: '2 hours',
+            C: '8 hours',
             D: '24 hours '
           },
           answer: 'B',
@@ -1746,6 +1747,110 @@ export default new Vuex.Store({
           answer: 'B',
         },
       },
+      
+
+      basira: {
+        1: {
+          question: '1. What is the most important detail needed before take on of a new book?',
+          options: {
+            A: 'Signed agreement and handover information',
+            B: 'Signed agreement, payment to seller, handover information and handover pack',
+            C: 'Signed agreement and proof of payment',
+            D: 'Handover information and handover pack'
+          },
+          answer: 'B',
+        },
+        2: {
+          question: '2. How is the placement strategy determined?',
+          options: {
+            A: 'Based on EDC performance',
+            B: 'Based on previous outcomes of matters',
+            C: 'Based on EDC capacity and outcomes, specialties, capacity and EDC preference',
+            D: 'Based on EDC performance, specialties, capacity and matter outcomes'
+          },
+          answer: 'D',
+        },
+        3: {
+          question: '3. How does the EDC get measured ultimately?',
+          options: {
+            A: 'Based on activations of the handover',
+            B: 'Based on yield performance on the capital handed over',
+            C: 'Based on the Matters worked to Right party contact conversion to Promise to pay conversion',
+            D: 'Based on the Promise to pay to success collected rate'
+          },
+          answer: 'B',
+        },
+        4: {
+          question: '4. What is the most time intensive administrative task within EDC environment?',
+          options: {
+            A: 'Attending to debtor queries',
+            B: 'Preparing of month end reporting',
+            C: 'Review and format correction of EDC reporting received',
+            D: 'Attending to ad hoc projects'
+          },
+          answer: 'C',
+        },
+        5: {
+          question: '5. What initiation fee can be charged on a R1’000 loan according to the NCR?',
+          options: {
+            A: 'R165 as per the minimum allowed fee',
+            B: 'R100 being 10% of the loan',
+            C: 'R150 being the maximum allowed',
+            D: 'R0 as you not allowed to tax initiation fee on a R1’000 loan'
+          },
+          answer: 'C',
+        },
+        6: {
+          question: '6. Can letters, sms messages and telephone cost be claimed back from the debtor?',
+          options: {
+            A: 'No, this cannot be claimed back',
+            B: 'Yes, this can be claimed back in an EDC environment',
+            C: 'No sms, letters and telephone calls are used within an EDC environment',
+            D: 'This is for the clients account (Basira)'
+          },
+          answer: 'A',
+        },
+        7: {
+          question: '7. What should be considered for prescription?',
+          options: {
+            A: 'Date that loan was paid out',
+            B: '< 3 years from Last payment and/or acknowledgement of debt',
+            C: '< 5 years from Last payment and/or acknowledgement of debt',
+            D: '< 3 years from activation date'
+          },
+          answer: 'D',
+        },
+        8: {
+          question: '8. When are in between placement process used?',
+          options: {
+            A: 'Always',
+            B: 'Dependent on Client',
+            C: 'Dependent on loan agreement',
+            D: 'EDC will spesify'
+          },
+          answer: 'C',
+        },
+        9: {
+          question: '9. What is a Section 129?',
+          options: {
+            A: 'A collections process to be followed.',
+            B: 'The summons processes',
+            C: 'A legislation to comply with for credit assessment ',
+            D: 'Registered Letter of Demand'
+          },
+          answer: 'D',
+        },
+        10: {
+          question: '10. Why is month end reporting important?',
+          options: {
+            A: 'For strategy determination going forward',
+            B: 'To feedback to the client on performance',
+            C: 'To determine the yield performance towards target',
+            D: 'All of the above'
+          },
+          answer: 'D',
+        },
+      },
 
 
       legalDivision: {
@@ -1839,8 +1944,10 @@ export default new Vuex.Store({
           },
           answer: 'B',
         },
-      }
+      },
     },
+
+    
 
 
 
