@@ -117,7 +117,7 @@ export default {
           alert("Saved data! Thank you");
         })
         .catch((e) => {
-          alert("We got your test saved!");
+          alert("Network error occurred, data not saved.");
         });
     },
     desicion() {
