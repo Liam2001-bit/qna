@@ -19,14 +19,11 @@
     <br />
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img
-          src="@/assets/uloans-business.png"
-          width="18%"
-          alt="uloans business logo"
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-small" src="@/assets/uloans-business.png" alt="uloans business logo"
         />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="uloans"
           rounded
@@ -49,10 +46,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/uloans.png" width="18%" alt="uloans logo" />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-small" src="@/assets/uloans.png" alt="uloans logo" />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="uloans"
           rounded
@@ -78,10 +75,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/blogo.png" width="20%" alt="uloans logo" />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-small" src="@/assets/blogo.png" alt="uloans logo" />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="basira"
           rounded
@@ -108,14 +105,11 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img
-          src="@/assets/statuscapitalbuildingsociety.png"
-          width="60%"
-          alt="status capital buidling society logo"
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-large" src="@/assets/statuscapitalbuildingsociety.png" alt="status capital buidling society logo"
         />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="info"
           rounded
@@ -126,7 +120,7 @@
               questionNumber: 1,
             },
           }"
-          >SCBS AML/CFT Quiz
+          >SCBS AML/CFT test
         </v-btn>
         <br />
         <v-btn
@@ -139,7 +133,7 @@
               questionNumber: 1,
             },
           }"
-          >eSWATINI Training Module Banking</v-btn
+          >eSWATINI Training Module Banking test</v-btn
         >
         <br />
         <v-btn
@@ -152,7 +146,7 @@
               questionNumber: 1,
             },
           }"
-          >eSWATINI Sales Quiz
+          >eSWATINI Sales test
         </v-btn>
         <br />
         <v-btn
@@ -165,7 +159,7 @@
               questionNumber: 1,
             },
           }"
-          >eSWATINI Quiz
+          >eSWATINI test
         </v-btn>
         <br />
       </v-col>
@@ -175,14 +169,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img
-          src="@/assets/fintechLogo.png"
-          width="35%"
-          alt="fintech campus logo"
-        />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-large" src="@/assets/fintechLogo.png" alt="fintech campus logo"/>
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="fintech"
           rounded
@@ -194,7 +184,7 @@
             },
           }"
           style="color: #fff"
-          >IT department test</v-btn
+          >IT department Competency test</v-btn
         >
         <br />
         <v-btn
@@ -256,10 +246,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/CryoSave1.png" width="40%" alt="Cryo Save logo" />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-large" src="@/assets/CryoSave1.png" alt="Cryo Save logo" />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="cryoSave"
           rounded
@@ -276,10 +266,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/SDFF.png" width="37%" alt="SDFF logo" />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-large" src="@/assets/SDFF.png" alt="SDFF logo" />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="sdff"
           rounded
@@ -290,20 +280,16 @@
               questionNumber: 1,
             },
           }"
-          >Payroll Lending Africa</v-btn
+          >Payroll Lending Africa test</v-btn
         >
       </v-col>
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img
-          src="@/assets/credit-store.png"
-          width="50%"
-          alt="Credit Store logo"
-        />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-large" src="@/assets/credit-store.png" alt="Credit Store logo"/>
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="creditStore"
           rounded
@@ -320,10 +306,10 @@
     </v-row>
     <br />
     <v-row>
-      <v-col cols="4" class="d-flex flex-column align-center justify-center">
-        <img src="@/assets/aluma.png" width="22%" alt="Aluma logo" />
+      <v-col cols="7" class="d-flex flex-column align-center justify-center">
+        <img class="logos-small" src="@/assets/aluma.png" alt="Aluma logo" />
       </v-col>
-      <v-col cols="3" class="d-flex flex-column align-center justify-center">
+      <v-col cols="1" class="d-flex flex-column align-center justify-center">
         <v-btn
           color="aluma"
           rounded
@@ -388,11 +374,13 @@ export default {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
 @media (max-width: 991.98px) {
   .hero-wrap {
     background-position: center center !important;
   }
 }
+
 .hero-wrap {
   height: 105%;
   margin-left: -1px;
@@ -403,5 +391,81 @@ export default {
   height: 600px;
   position: inherit;
   background-position: top center;
+}
+
+.logos-small {
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+  width: 12%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .logos-small {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 20%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logos-small {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 17%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .logos-small {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 15%;
+    position: relative;
+  }
+}
+
+.logos-large {
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+  width: 20%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .logos-large {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 27%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logos-large {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 22%;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .logos-large {
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    width: 20%;
+    position: relative;
+  }
 }
 </style>

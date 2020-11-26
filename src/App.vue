@@ -185,36 +185,35 @@ export default {
 
   #grad2 {
   height: auto;
-  width: 100%;
-  
-  animation: pulse 5s ease-in-out infinite;
+  width: 100%;  
+  animation: pulse 10s ease-in infinite;
 }
 
 @keyframes pulse {
   0% {
-    background-color: rgb(231, 243, 255);
+    background-color: rgb(128, 247, 181);
   }
   12% {
-    background-color: rgb(190, 226, 255);
+    background-color: rgb(179, 152, 255);
   }
   25% {
-    background-color: rgb(130, 199, 255);
+    background-color: rgb(130, 143, 255);
   }
   37% {
-    background-color: rgb(70, 156, 255);
+    background-color: rgb(172, 70, 255);
   }
   50% {
-    background-color: rgb(5, 134, 255);
+    background-color: rgb(5, 197, 255);
   }
 
   63% {
-    background-color: rgb(61, 129, 255);
+    background-color: rgb(61, 216, 255);
   }
   78% {
-    background-color: rgb(166, 204, 255);
+    background-color: rgb(166, 255, 196);
   }
   100% {
-    background-color: rgb(244, 251, 255);
+    background-color: rgb(81, 252, 124);
   }  
 }
 </style>
