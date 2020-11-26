@@ -23,12 +23,13 @@
         </v-btn>
       </div>
     </div>
-
+    
     <div v-else class="ml-6 mt-6 scoreReveal">
       <h2 style="color: #fff">
         Congratulations, You <b style="color: #00ff25">PASSED</b>
       </h2>
     </div>
+    <div><button v-on:click="createCertificate('Distinction')">Create PDF</button></div>
     <br />
     <h3 class="ml-6 mt-3 scoreReveal" style="color: #fff; font-size: 24px">
       <u>Score:</u> {{ percentage.toFixed(2) }}%
@@ -41,13 +42,19 @@
     <br />
   </div>
 </template>
+
 <script>
 import { mapState } from "vuex";
-
+import html2canvas from "html2canvas";
+import $ from 'jquery';
+var images = require.context('../assets/', false, /\.png$/)
+ var doc = new jsPDF();
 export default {
+  
   props: {
     form: { required: true, type: String },
   },
+  
   data: () => ({
     score: 0,
     percentage: 0,
@@ -55,12 +62,10 @@ export default {
   mounted() {
     // get the amount of questions for this tests
     let amountOfQuestions = this.questionCount[this.$route.params.form];
-
     // determine how many questions did the client get right
     let score = 0;
     for (const [key, value] of Object.entries(this.answerSheet)) {
       let intKey = parseInt(key);
-
       if (intKey <= amountOfQuestions) {
         let answer = this.questionForms[this.form][key].answer;
         if (value == answer) {
@@ -68,10 +73,8 @@ export default {
         }
       }
     }
-
     this.score = score;
     this.percentage = (score / amountOfQuestions) * 100;
-
     this.saveDateToDb();
   },
   computed: {
@@ -82,7 +85,7 @@ export default {
       "firstname",
       "lastname",
       "email",
-    ]),
+    ])
     // percentage: {
     //   get: function () {
     //     return +(this.score * 100);
@@ -90,9 +93,39 @@ export default {
     // },
   },
   methods: {
+    imgURL(path){return images("./"+path)},
+    createCertificate(achievement){
+     //var certHtml = "<html><body><p>test HTML string</p></body></html>"
+     
+      var iframe=document.createElement('iframe');
+       
+$('body').append($(iframe));
+//$('iframe').hide();
+setTimeout(function(){
+    var iframedoc=iframe.contentDocument||iframe.contentWindow.document;
+    $('body',$(iframedoc)).html('<html><body><div style="height:100%; width:100%; background: rgb(92,155,187);background: linear-gradient(160deg, rgba(92,155,187,1) 0%, rgba(11,26,70,1) 100%);"><div style="text-align:center;"><img src="'+images("./status.png")+'" height="100" width="150" /><h1 style="font-family:Tahoma; font-size:15pt; color:white;text-shadow: 2px 2px 2px black;">Certificate of Completion</h1><br/>	<h3 style="font-family:Tahoma; font-size:10pt; color:white;">This certificate hereby states that</h3>	<h3 style="font-family:Georgia; font-size:14pt; color:black; text-decoration:underline;">'+this.fd.first+' '+this.fd.last+'</h3>		<h3 style="font-family:Tahoma; font-size:10pt; color:white;">has successfully passed their internship assessment.</h3><br/>	<h3 style="font-family:Tahoma; font-size:12pt; color:white;">Achievement Received: </h3><h3 style="color:green; font-family:Tahoma; font-size:12pt; color:green;">'+achievement+'</h3></br> 		</div></div></body></html>');
+   
+    html2canvas(iframedoc.body,{scale: 8}).then((filledcanvas)=>{
+       $('iframe').remove(); 
+    var img=filledcanvas.toDataURL("image/jpg",1.0);
+   
+   var doc = new jsPDF('p','px',[480,560]);
+ 
+   doc.addImage(img, 'PNG', -7, 0, 480,550);
+   
+   doc.save('Certificate.pdf');
+          
+            }).catch((err)=>{console.log(err)}); 
+               
+  
+}, 10);
+     
+    
+      
+      
+      },
     saveDateToDb() {
       const axios = require("axios");
-
       let data = {
         firstName: this.firstname,
         lastName: this.lastname,
@@ -100,7 +133,6 @@ export default {
         testName: this.$route.params.form,
         score: this.percentage,
       };
-
       let config = {
         method: "post",
         url: `${process.env.VUE_APP_API_BACKEND}intern/tests`,
@@ -111,7 +143,6 @@ export default {
         },
         data: data,
       };
-
       axios(config)
         .then((r) => {
           alert("Saved data! Thank you");
@@ -201,7 +232,6 @@ export default {
           passedGreat: 10,
         },
       };
-
       if (this.percentage < 70) {
         this.$router.push({
           name: "Questions",
@@ -210,11 +240,15 @@ export default {
             questionNumber: 1,
           },
         });
-      } else if (this.percentage >= 100) {
+      } else if (this.percentage == 100) {
+       
         alert("You passed with an exceptional achievement of 100%!");
+        this.createCertificate('Distinction')
       } else if (this.percentage >= 90) {
+       this.createCertificate('Merit')
         alert("You passed with distinction of 90%!");
       } else if (this.percentage >= 80) {
+        this.createCertificate('Pass')
         alert("You passed with an average of 80%!");
       }
     },
@@ -270,12 +304,10 @@ export default {
   opacity: 0;
   background: #000;
 }
-
 .scoreReveal {
   position: relative;
   animation: mymove 3s;
 }
-
 @keyframes mymove {
   from {
     left: 1200px;
